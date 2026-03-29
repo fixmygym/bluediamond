@@ -43,11 +43,6 @@ export default function App() {
       {/* Navigation */}
       <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? "bg-charcoal/80 backdrop-blur-xl border-b border-white/5" : "bg-transparent"}`}>
         <div className="max-w-[1400px] mx-auto px-6 flex items-center h-20 md:h-32">
-          {/* Hamburger — left on mobile */}
-          <button className="lg:hidden text-white mr-4" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-            {mobileMenuOpen ? <X /> : <Menu />}
-          </button>
-
           {/* Logo */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -84,6 +79,10 @@ export default function App() {
             </button>
           </motion.div>
 
+          {/* Hamburger — right on mobile */}
+          <button className="lg:hidden text-white ml-auto" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+            {mobileMenuOpen ? <X /> : <Menu />}
+          </button>
         </div>
 
         {/* Mobile Menu */}
@@ -91,7 +90,7 @@ export default function App() {
           <motion.div 
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="absolute top-full left-0 w-full bg-charcoal border-b border-white/10 p-6 flex flex-col gap-4 lg:hidden"
+            className="absolute top-full left-0 w-full bg-charcoal border-b border-white/10 p-6 flex flex-col gap-4 lg:hidden items-end"
           >
             <a href="#about" className="text-slate-200 hover:text-white" onClick={() => setMobileMenuOpen(false)}>About Blue Diamond</a>
             <a href="#coaching" className="text-slate-200 hover:text-white" onClick={() => setMobileMenuOpen(false)}>Our Coaching</a>
