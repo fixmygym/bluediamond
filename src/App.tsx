@@ -43,13 +43,18 @@ export default function App() {
       {/* Navigation */}
       <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? "bg-charcoal/80 backdrop-blur-xl border-b border-white/5" : "bg-transparent"}`}>
         <div className="max-w-[1400px] mx-auto px-6 flex items-center h-20 md:h-32">
+          {/* Hamburger — left on mobile */}
+          <button className="lg:hidden text-white mr-4" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+            {mobileMenuOpen ? <X /> : <Menu />}
+          </button>
+
           {/* Logo */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             className="flex items-center"
           >
-            <img src="/logo 2.png" alt="Blue Diamond Consultants" className="h-20 md:h-32 w-auto" />
+            <img src="/logo2.webp" alt="Blue Diamond Consultants" className="h-20 md:h-32 w-auto" />
           </motion.div>
 
           {/* Centered Menu */}
@@ -79,9 +84,6 @@ export default function App() {
             </button>
           </motion.div>
 
-          <button className="lg:hidden text-white" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-            {mobileMenuOpen ? <X /> : <Menu />}
-          </button>
         </div>
 
         {/* Mobile Menu */}

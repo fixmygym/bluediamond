@@ -22,7 +22,7 @@ function ClarityCallVisual() {
   }, []);
 
   return (
-    <div className="flex flex-col gap-1.5 w-full max-w-[210px] mx-auto">
+    <div className="flex flex-col gap-1.5 w-full max-w-[210px] mx-auto px-2">
       <div className="flex items-center gap-2 mb-2">
         <Calendar className="w-3.5 h-3.5 text-electric-blue" />
         <span className="text-[10px] text-slate-500 uppercase tracking-widest">
