@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-charcoal: #0F1113;
+  --color-electric-blue: #2EA3F2;
+  --color-deep-blue: #145A9E;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-button: "Plus Jakarta Sans", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-charcoal text-white font-sans antialiased;
+  }
+}
+
+.glass-card {
+  @apply bg-white/[0.06] backdrop-blur-3xl border border-white/15 rounded-2xl;
+}
+
+.blue-gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-electric-blue to-deep-blue;
+  padding-right: 0.2em;
+  padding-bottom: 0.18em;
+}
+
+.blue-gradient-bg {
+  @apply bg-gradient-to-r from-electric-blue to-deep-blue;
+}
+
+.accent-gradient-bg {
+  @apply bg-[#00DDEE] text-black font-black shadow-[0_0_15px_rgba(0,170,204,0.25)] transition-all duration-300 border-2 border-transparent;
+}
+
+.accent-gradient-bg:hover {
+  @apply bg-transparent text-[#00DDEE] border-[#00DDEE] shadow-none;
+}
+
+.glow-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: radial-gradient(circle at 50% 50%, rgba(46, 163, 242, 0.1) 0%, rgba(15, 17, 19, 1) 100%);
+}
+
+.glow-spot {
+  position: fixed;
+  width: 1000px;
+  height: 1000px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(46, 163, 242, 0.25) 0%, transparent 70%);
+  filter: blur(120px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.glow-spot-secondary {
+  position: fixed;
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(20, 90, 158, 0.2) 0%, transparent 70%);
+  filter: blur(100px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+@keyframes wave {
+  0% { transform: translateX(0) translateZ(0) scaleY(1); }
+  50% { transform: translateX(-25%) translateZ(0) scaleY(0.8); }
+  100% { transform: translateX(-50%) translateZ(0) scaleY(1); }
+}
+
+.wave-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200%;
+  height: 120px;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.wave-path {
+  animation: wave 15s linear infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.float-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+.spotlight {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: radial-gradient(
+    circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    rgba(46, 163, 242, 0.15) 0%,
+    transparent 50%
+  );
+  pointer-events: none;
+}

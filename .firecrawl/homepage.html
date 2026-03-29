@@ -1,0 +1,1070 @@
+<!DOCTYPE html><html lang="en-US" class=" js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style rel="stylesheet" type="text/css">@charset "utf-8";
+
+img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px; }</style><style rel="stylesheet" type="text/css">@charset "utf-8";
+
+img.wp-smiley, img.emoji { display: inline !important; border: none !important; box-shadow: none !important; height: 1em !important; width: 1em !important; margin: 0px 0.07em !important; vertical-align: -0.1em !important; background: none !important; padding: 0px !important; }</style><style rel="stylesheet" type="text/css">@charset "utf-8";
+
+:root { --wp-block-synced-color: #7a00df; --wp-block-synced-color--rgb: 122,0,223; --wp-bound-block-color: var(--wp-block-synced-color); --wp-editor-canvas-background: #ddd; --wp-admin-theme-color: #007cba; --wp-admin-theme-color--rgb: 0,124,186; --wp-admin-theme-color-darker-10: #006ba1; --wp-admin-theme-color-darker-10--rgb: 0,107,160.5; --wp-admin-theme-color-darker-20: #005a87; --wp-admin-theme-color-darker-20--rgb: 0,90,135; --wp-admin-border-width-focus: 2px; }
+
+@media (min-resolution: 192dpi) {
+  :root { --wp-admin-border-width-focus: 1.5px; }
+}
+
+.wp-element-button { cursor: pointer; }
+
+:root .has-very-light-gray-background-color { background-color: rgb(238, 238, 238); }
+
+:root .has-very-dark-gray-background-color { background-color: rgb(49, 49, 49); }
+
+:root .has-very-light-gray-color { color: rgb(238, 238, 238); }
+
+:root .has-very-dark-gray-color { color: rgb(49, 49, 49); }
+
+:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background { background: linear-gradient(135deg, rgb(0, 208, 132), rgb(6, 147, 227)); }
+
+:root .has-purple-crush-gradient-background { background: linear-gradient(135deg, rgb(52, 226, 228), rgb(71, 33, 251) 50%, rgb(171, 29, 254)); }
+
+:root .has-hazy-dawn-gradient-background { background: linear-gradient(135deg, rgb(250, 172, 168), rgb(218, 208, 236)); }
+
+:root .has-subdued-olive-gradient-background { background: linear-gradient(135deg, rgb(250, 250, 225), rgb(103, 166, 113)); }
+
+:root .has-atomic-cream-gradient-background { background: linear-gradient(135deg, rgb(253, 215, 154), rgb(0, 74, 89)); }
+
+:root .has-nightshade-gradient-background { background: linear-gradient(135deg, rgb(51, 9, 104), rgb(49, 205, 207)); }
+
+:root .has-midnight-gradient-background { background: linear-gradient(135deg, rgb(2, 3, 129), rgb(40, 116, 252)); }
+
+:root { --wp--preset--font-size--normal: 16px; --wp--preset--font-size--huge: 42px; }
+
+.has-regular-font-size { font-size: 1em; }
+
+.has-larger-font-size { font-size: 2.625em; }
+
+.has-normal-font-size { font-size: var(--wp--preset--font-size--normal); }
+
+.has-huge-font-size { font-size: var(--wp--preset--font-size--huge); }
+
+.has-text-align-center { text-align: center; }
+
+.has-text-align-left { text-align: left; }
+
+.has-text-align-right { text-align: right; }
+
+.has-fit-text { white-space: nowrap !important; }
+
+#end-resizable-editor-section { display: none; }
+
+.aligncenter { clear: both; }
+
+.items-justified-left { justify-content: flex-start; }
+
+.items-justified-center { justify-content: center; }
+
+.items-justified-right { justify-content: flex-end; }
+
+.items-justified-space-between { justify-content: space-between; }
+
+.screen-reader-text { border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; overflow-wrap: normal !important; }
+
+.screen-reader-text:focus { background-color: rgb(221, 221, 221); clip-path: none; color: rgb(68, 68, 68); display: block; font-size: 1em; height: auto; left: 5px; line-height: normal; padding: 15px 23px 14px; text-decoration: none; top: 5px; width: auto; z-index: 100000; }
+
+html :where(.has-border-color) { border-style: solid; }
+
+html :where([style*="border-top-color"]) { border-top-style: solid; }
+
+html :where([style*="border-right-color"]) { border-right-style: solid; }
+
+html :where([style*="border-bottom-color"]) { border-bottom-style: solid; }
+
+html :where([style*="border-left-color"]) { border-left-style: solid; }
+
+html :where([style*="border-width"]) { border-style: solid; }
+
+html :where([style*="border-top-width"]) { border-top-style: solid; }
+
+html :where([style*="border-right-width"]) { border-right-style: solid; }
+
+html :where([style*="border-bottom-width"]) { border-bottom-style: solid; }
+
+html :where([style*="border-left-width"]) { border-left-style: solid; }
+
+html :where(img[class*="wp-image-"]) { height: auto; max-width: 100%; }
+
+:where(figure) { margin: 0px 0px 1em; }
+
+html :where(.is-position-sticky) { --wp-admin--admin-bar--position-offset: var(--wp-admin--admin-bar--height,0px); }
+
+@media screen and (max-width: 600px) {
+  html :where(.is-position-sticky) { --wp-admin--admin-bar--position-offset: 0px; }
+}</style><style rel="stylesheet" type="text/css">@charset "utf-8";
+
+:root { --wp--preset--aspect-ratio--square: 1; --wp--preset--aspect-ratio--4-3: 4/3; --wp--preset--aspect-ratio--3-4: 3/4; --wp--preset--aspect-ratio--3-2: 3/2; --wp--preset--aspect-ratio--2-3: 2/3; --wp--preset--aspect-ratio--16-9: 16/9; --wp--preset--aspect-ratio--9-16: 9/16; --wp--preset--color--black: #000000; --wp--preset--color--cyan-bluish-gray: #abb8c3; --wp--preset--color--white: #ffffff; --wp--preset--color--pale-pink: #f78da7; --wp--preset--color--vivid-red: #cf2e2e; --wp--preset--color--luminous-vivid-orange: #ff6900; --wp--preset--color--luminous-vivid-amber: #fcb900; --wp--preset--color--light-green-cyan: #7bdcb5; --wp--preset--color--vivid-green-cyan: #00d084; --wp--preset--color--pale-cyan-blue: #8ed1fc; --wp--preset--color--vivid-cyan-blue: #0693e3; --wp--preset--color--vivid-purple: #9b51e0; --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%); --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%); --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%); --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%); --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%); --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%); --wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%); --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%); --wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%); --wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%); --wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%); --wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%); --wp--preset--font-size--small: 13px; --wp--preset--font-size--medium: 20px; --wp--preset--font-size--large: 36px; --wp--preset--font-size--x-large: 42px; --wp--preset--spacing--20: 0.44rem; --wp--preset--spacing--30: 0.67rem; --wp--preset--spacing--40: 1rem; --wp--preset--spacing--50: 1.5rem; --wp--preset--spacing--60: 2.25rem; --wp--preset--spacing--70: 3.38rem; --wp--preset--spacing--80: 5.06rem; --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2); --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4); --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2); --wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0); --wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0); }
+
+:root { --wp--style--global--content-size: 960px; --wp--style--global--wide-size: 1280px; }
+
+:where(body) { margin: 0px; }
+
+.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }
+
+.wp-site-blocks > .alignright { float: right; margin-left: 2em; }
+
+.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }
+
+:where(.is-layout-flex) { gap: 0.5em; }
+
+:where(.is-layout-grid) { gap: 0.5em; }
+
+.is-layout-flow > .alignleft { float: left; margin-inline: 0px 2em; }
+
+.is-layout-flow > .alignright { float: right; margin-inline: 2em 0px; }
+
+.is-layout-flow > .aligncenter { margin-left: auto !important; margin-right: auto !important; }
+
+.is-layout-constrained > .alignleft { float: left; margin-inline: 0px 2em; }
+
+.is-layout-constrained > .alignright { float: right; margin-inline: 2em 0px; }
+
+.is-layout-constrained > .aligncenter { margin-left: auto !important; margin-right: auto !important; }
+
+.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) { max-width: var(--wp--style--global--content-size); margin-left: auto !important; margin-right: auto !important; }
+
+.is-layout-constrained > .alignwide { max-width: var(--wp--style--global--wide-size); }
+
+body .is-layout-flex { display: flex; }
+
+.is-layout-flex { flex-wrap: wrap; align-items: center; }
+
+.is-layout-flex > :is(*, div) { margin: 0px; }
+
+body .is-layout-grid { display: grid; }
+
+.is-layout-grid > :is(*, div) { margin: 0px; }
+
+body { padding: 0px; }
+
+a:where(:not(.wp-element-button)) { text-decoration: underline; }
+
+:root :where(.wp-element-button, .wp-block-button__link) { background-color: rgb(50, 55, 60); border-width: 0px; color: rgb(255, 255, 255); font-family: inherit; font-size: inherit; font-style: inherit; font-weight: inherit; letter-spacing: inherit; line-height: inherit; padding: calc(0.667em + 2px) calc(1.333em + 2px); text-decoration: none; text-transform: inherit; }
+
+.has-black-color { color: var(--wp--preset--color--black) !important; }
+
+.has-cyan-bluish-gray-color { color: var(--wp--preset--color--cyan-bluish-gray) !important; }
+
+.has-white-color { color: var(--wp--preset--color--white) !important; }
+
+.has-pale-pink-color { color: var(--wp--preset--color--pale-pink) !important; }
+
+.has-vivid-red-color { color: var(--wp--preset--color--vivid-red) !important; }
+
+.has-luminous-vivid-orange-color { color: var(--wp--preset--color--luminous-vivid-orange) !important; }
+
+.has-luminous-vivid-amber-color { color: var(--wp--preset--color--luminous-vivid-amber) !important; }
+
+.has-light-green-cyan-color { color: var(--wp--preset--color--light-green-cyan) !important; }
+
+.has-vivid-green-cyan-color { color: var(--wp--preset--color--vivid-green-cyan) !important; }
+
+.has-pale-cyan-blue-color { color: var(--wp--preset--color--pale-cyan-blue) !important; }
+
+.has-vivid-cyan-blue-color { color: var(--wp--preset--color--vivid-cyan-blue) !important; }
+
+.has-vivid-purple-color { color: var(--wp--preset--color--vivid-purple) !important; }
+
+.has-black-background-color { background-color: var(--wp--preset--color--black) !important; }
+
+.has-cyan-bluish-gray-background-color { background-color: var(--wp--preset--color--cyan-bluish-gray) !important; }
+
+.has-white-background-color { background-color: var(--wp--preset--color--white) !important; }
+
+.has-pale-pink-background-color { background-color: var(--wp--preset--color--pale-pink) !important; }
+
+.has-vivid-red-background-color { background-color: var(--wp--preset--color--vivid-red) !important; }
+
+.has-luminous-vivid-orange-background-color { background-color: var(--wp--preset--color--luminous-vivid-orange) !important; }
+
+.has-luminous-vivid-amber-background-color { background-color: var(--wp--preset--color--luminous-vivid-amber) !important; }
+
+.has-light-green-cyan-background-color { background-color: var(--wp--preset--color--light-green-cyan) !important; }
+
+.has-vivid-green-cyan-background-color { background-color: var(--wp--preset--color--vivid-green-cyan) !important; }
+
+.has-pale-cyan-blue-background-color { background-color: var(--wp--preset--color--pale-cyan-blue) !important; }
+
+.has-vivid-cyan-blue-background-color { background-color: var(--wp--preset--color--vivid-cyan-blue) !important; }
+
+.has-vivid-purple-background-color { background-color: var(--wp--preset--color--vivid-purple) !important; }
+
+.has-black-border-color { border-color: var(--wp--preset--color--black) !important; }
+
+.has-cyan-bluish-gray-border-color { border-color: var(--wp--preset--color--cyan-bluish-gray) !important; }
+
+.has-white-border-color { border-color: var(--wp--preset--color--white) !important; }
+
+.has-pale-pink-border-color { border-color: var(--wp--preset--color--pale-pink) !important; }
+
+.has-vivid-red-border-color { border-color: var(--wp--preset--color--vivid-red) !important; }
+
+.has-luminous-vivid-orange-border-color { border-color: var(--wp--preset--color--luminous-vivid-orange) !important; }
+
+.has-luminous-vivid-amber-border-color { border-color: var(--wp--preset--color--luminous-vivid-amber) !important; }
+
+.has-light-green-cyan-border-color { border-color: var(--wp--preset--color--light-green-cyan) !important; }
+
+.has-vivid-green-cyan-border-color { border-color: var(--wp--preset--color--vivid-green-cyan) !important; }
+
+.has-pale-cyan-blue-border-color { border-color: var(--wp--preset--color--pale-cyan-blue) !important; }
+
+.has-vivid-cyan-blue-border-color { border-color: var(--wp--preset--color--vivid-cyan-blue) !important; }
+
+.has-vivid-purple-border-color { border-color: var(--wp--preset--color--vivid-purple) !important; }
+
+.has-vivid-cyan-blue-to-vivid-purple-gradient-background { background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important; }
+
+.has-light-green-cyan-to-vivid-green-cyan-gradient-background { background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important; }
+
+.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background { background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important; }
+
+.has-luminous-vivid-orange-to-vivid-red-gradient-background { background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important; }
+
+.has-very-light-gray-to-cyan-bluish-gray-gradient-background { background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important; }
+
+.has-cool-to-warm-spectrum-gradient-background { background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important; }
+
+.has-blush-light-purple-gradient-background { background: var(--wp--preset--gradient--blush-light-purple) !important; }
+
+.has-blush-bordeaux-gradient-background { background: var(--wp--preset--gradient--blush-bordeaux) !important; }
+
+.has-luminous-dusk-gradient-background { background: var(--wp--preset--gradient--luminous-dusk) !important; }
+
+.has-pale-ocean-gradient-background { background: var(--wp--preset--gradient--pale-ocean) !important; }
+
+.has-electric-grass-gradient-background { background: var(--wp--preset--gradient--electric-grass) !important; }
+
+.has-midnight-gradient-background { background: var(--wp--preset--gradient--midnight) !important; }
+
+.has-small-font-size { font-size: var(--wp--preset--font-size--small) !important; }
+
+.has-medium-font-size { font-size: var(--wp--preset--font-size--medium) !important; }
+
+.has-large-font-size { font-size: var(--wp--preset--font-size--large) !important; }
+
+.has-x-large-font-size { font-size: var(--wp--preset--font-size--x-large) !important; }</style><style rel="stylesheet" type="text/css">@charset "utf-8";
+
+.rll-youtube-player { position: relative; padding-bottom: 56.23%; height: 0px; overflow: hidden; max-width: 100%; }
+
+.rll-youtube-player:focus-within { outline: currentcolor solid 2px; outline-offset: 5px; }
+
+.rll-youtube-player iframe { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 100; background: 0px 0px; }
+
+.rll-youtube-player img { inset: 0px; display: block; margin: auto; max-width: 100%; width: 100%; position: absolute; border: none; height: auto; transition: 0.4s; }
+
+.rll-youtube-player img:hover { filter: brightness(75%); }
+
+.rll-youtube-player .play { height: 100%; width: 100%; left: 0px; top: 0px; position: absolute; background-image: ; background-position-x: ; background-position-y: ; background-size: ; background-repeat: ; background-attachment: ; background-origin: ; background-clip: ; cursor: pointer; border: none; background-color: transparent !important; }</style><style rel="stylesheet" type="text/css">@charset "utf-8";
+
+</style><style rel="stylesheet" type="text/css">@charset "utf-8";
+
+.blog-page .resources-section { display: none; }</style><style rel="stylesheet" type="text/css">@charset "utf-8";
+
+[data-wpr-lazyrender] { content-visibility: auto; }</style><style rel="stylesheet" type="text/css">@charset "utf-8";
+
+</style><style rel="stylesheet" type="text/css">@charset "utf-8";
+
+form .frm_fields_container select { --wpr-bg-d96ff9de-4a36-4f64-a6b4-bcf6c79fa1f2: url('https://bluediamondconsultants.com/wp-content/uploads/icon-down-1.svg'); }</style><style rel="stylesheet" type="text/css">@charset "utf-8";
+
+header#masthead .headerMainInner #site-navigation > div ul#primary-menu .menu-item:not(.mobile-menu-book-container) .plusMinus .plusMinusInner::after { --wpr-bg-0e4c84a0-b5a5-4252-9ace-9d25aa1ed60a: url('https://bluediamondconsultants.com/wp-content/uploads/icon_up.svg'); }</style><style rel="stylesheet" type="text/css">@charset "utf-8";
+
+header#masthead .headerMainInner #site-navigation > div ul#primary-menu .menu-item:not(.mobile-menu-book-container) .plusMinus .plusMinusInner::after { --wpr-bg-0e4c84a0-b5a5-4252-9ace-9d25aa1ed60a: url('https://bluediamondconsultants.com/wp-content/uploads/icon_up.svg'); }</style><style rel="stylesheet" type="text/css">@charset "utf-8";
+
+header#masthead .headerMainInner #site-navigation > div ul#primary-menu .menu-item:not(.mobile-menu-book-container) .plusMinus .plusMinusInner::after { --wpr-bg-0e4c84a0-b5a5-4252-9ace-9d25aa1ed60a: url('https://bluediamondconsultants.com/wp-content/uploads/icon_up.svg'); }</style><style rel="stylesheet" type="text/css">@charset "utf-8";
+
+header#masthead .headerMainInner #site-navigation > div ul#primary-menu .menu-item:not(.mobile-menu-book-container) .plusMinus .plusMinusInner::after { --wpr-bg-0e4c84a0-b5a5-4252-9ace-9d25aa1ed60a: url('https://bluediamondconsultants.com/wp-content/uploads/icon_up.svg'); }</style><style rel="stylesheet" type="text/css">@charset "utf-8";
+
+header#masthead .headerMainInner #site-navigation > div ul#primary-menu .menu-item:not(.mobile-menu-book-container) .plusMinus .plusMinusInner::after { --wpr-bg-0e4c84a0-b5a5-4252-9ace-9d25aa1ed60a: url('https://bluediamondconsultants.com/wp-content/uploads/icon_up.svg'); }</style><style rel="stylesheet" type="text/css">@charset "utf-8";
+
+header#masthead .headerMainInner #site-navigation > div ul#primary-menu .menu-item:not(.mobile-menu-book-container) .plusMinus .plusMinusInner::after { --wpr-bg-0e4c84a0-b5a5-4252-9ace-9d25aa1ed60a: url('https://bluediamondconsultants.com/wp-content/uploads/icon_up.svg'); }</style><style rel="stylesheet" type="text/css">@charset "utf-8";
+
+header#masthead .headerMainInner #site-navigation > div ul#primary-menu .menu-item:not(.mobile-menu-book-container) .plusMinus .plusMinusInner::after { --wpr-bg-0e4c84a0-b5a5-4252-9ace-9d25aa1ed60a: url('https://bluediamondconsultants.com/wp-content/uploads/icon_up.svg'); }</style><style rel="stylesheet" type="text/css">@charset "utf-8";
+
+header#masthead .headerMainInner #site-navigation > div ul#primary-menu .menu-item:not(.mobile-menu-book-container) .plusMinus .plusMinusInner::after { --wpr-bg-0e4c84a0-b5a5-4252-9ace-9d25aa1ed60a: url('https://bluediamondconsultants.com/wp-content/uploads/icon_up.svg'); }</style><style rel="stylesheet" type="text/css">@charset "utf-8";
+
+header#masthead .headerMainInner #site-navigation > div ul#primary-menu .menu-item:not(.mobile-menu-book-container) .plusMinus .plusMinusInner::after { --wpr-bg-0e4c84a0-b5a5-4252-9ace-9d25aa1ed60a: url('https://bluediamondconsultants.com/wp-content/uploads/icon_up.svg'); }</style><style rel="stylesheet" type="text/css">@charset "utf-8";
+
+header#masthead .headerMainInner #site-navigation > div ul#primary-menu .menu-item:not(.mobile-menu-book-container) .plusMinus .plusMinusInner::after { --wpr-bg-0e4c84a0-b5a5-4252-9ace-9d25aa1ed60a: url('https://bluediamondconsultants.com/wp-content/uploads/icon_up.svg'); }</style><style rel="stylesheet" type="text/css">@charset "utf-8";
+
+header#masthead .headerMainInner #site-navigation > div ul#primary-menu .menu-item:not(.mobile-menu-book-container) .plusMinus .plusMinusInner::after { --wpr-bg-0e4c84a0-b5a5-4252-9ace-9d25aa1ed60a: url('https://bluediamondconsultants.com/wp-content/uploads/icon_up.svg'); }</style><style rel="stylesheet" type="text/css">@charset "utf-8";
+
+header#masthead .headerMainInner #site-navigation > div ul#primary-menu .menu-item:not(.mobile-menu-book-container) .plusMinus .plusMinusInner::after { --wpr-bg-0e4c84a0-b5a5-4252-9ace-9d25aa1ed60a: url('https://bluediamondconsultants.com/wp-content/uploads/icon_up.svg'); }</style><style rel="stylesheet" type="text/css">@charset "utf-8";
+
+header#masthead .headerMainInner #site-navigation > div ul#primary-menu .menu-item:not(.mobile-menu-book-container) .plusMinus .plusMinusInner::after { --wpr-bg-0e4c84a0-b5a5-4252-9ace-9d25aa1ed60a: url('https://bluediamondconsultants.com/wp-content/uploads/icon_up.svg'); }</style><style rel="stylesheet" type="text/css">@charset "utf-8";
+
+.home-hero .hero .hero-inner .hero-right::before { --wpr-bg-9eba8d12-1461-42ca-add4-365ebe8dea2a: url('https://bluediamondconsultants.com/wp-content/uploads/mobile_homepage_slant-1.webp'); }</style><style rel="stylesheet" type="text/css">@charset "utf-8";
+
+.hero .hero-inner .hero-right::before { --wpr-bg-e10b053d-5fd5-420c-888a-0494f37922d6: url('https://bluediamondconsultants.com/wp-content/uploads/desktop_hero_slant.webp'); }</style><style rel="stylesheet" type="text/css">@charset "utf-8";
+
+.image-has-border p::after { --wpr-bg-20483c6c-0de8-4a7f-a82e-5bf33d8cfde5: url('https://bluediamondconsultants.com/wp-content/uploads/border.svg'); }</style><style rel="stylesheet" type="text/css">@charset "utf-8";
+
+#frm_field_53_container, #frm_field_54_container { visibility: hidden; overflow: hidden; width: 0px; height: 0px; position: absolute; }</style>
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://bluediamondconsultants.com/xmlrpc.php">
+
+    <link data-minify="1" rel="stylesheet" href="https://bluediamondconsultants.com/wp-content/cache/min/1/qbp7dhh.css?ver=1769705865">
+    <link rel="stylesheet" href="https://bluediamondconsultants.com/wp-content/themes/blue-diamond/js/glide/dist/css/glide.core.min.css">
+    
+
+	<link data-minify="1" rel="stylesheet" href="https://bluediamondconsultants.com/wp-content/cache/min/1/wp-content/themes/blue-diamond/js/aos-master/dist/aos.css?ver=1769705865">
+	
+
+	
+	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+            <script type="text/javascript" async="" src="https://fd.cleantalk.org/1.1.59/ct-bot-detector.min.js"></script><script data-no-defer="1" data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer="" data-cookieconsent="ignore">
+                var ctPublicFunctions = {"_ajax_nonce":"6a1638e40e","_rest_nonce":"51863133e2","_ajax_url":"\/wp-admin\/admin-ajax.php","_rest_url":"https:\/\/bluediamondconsultants.com\/wp-json\/","data__cookies_type":"none","data__ajax_type":"rest","data__bot_detector_enabled":"1","data__frontend_data_log_enabled":1,"cookiePrefix":"","wprocket_detected":true,"host_url":"bluediamondconsultants.com","text__ee_click_to_select":"Click to select the whole data","text__ee_original_email":"The complete one is","text__ee_got_it":"Got it","text__ee_blocked":"Blocked","text__ee_cannot_connect":"Cannot connect","text__ee_cannot_decode":"Can not decode email. Unknown reason","text__ee_email_decoder":"CleanTalk email decoder","text__ee_wait_for_decoding":"The magic is on the way!","text__ee_decoding_process":"Please wait a few seconds while we decode the contact data."}
+            </script>
+        
+            <script data-no-defer="1" data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer="" data-cookieconsent="ignore">
+                var ctPublic = {"_ajax_nonce":"6a1638e40e","settings__forms__check_internal":"0","settings__forms__check_external":"0","settings__forms__force_protection":"0","settings__forms__search_test":"1","settings__forms__wc_add_to_cart":"0","settings__data__bot_detector_enabled":"1","settings__sfw__anti_crawler":0,"blog_home":"https:\/\/bluediamondconsultants.com\/","pixel__setting":"3","pixel__enabled":true,"pixel__url":null,"data__email_check_before_post":"1","data__email_check_exist_post":"1","data__cookies_type":"none","data__key_is_ok":true,"data__visible_fields_required":true,"wl_brandname":"Anti-Spam by CleanTalk","wl_brandname_short":"CleanTalk","ct_checkjs_key":"03339d9389f8a283a8d12c295d128fa274139c16ed2931b0e7e6852d18a2ed60","emailEncoderPassKey":"8dfec7086cbb2bde9c75257e271ad3a2","bot_detector_forms_excluded":"W10=","advancedCacheExists":true,"varnishCacheExists":false,"wc_ajax_add_to_cart":false}
+            </script>
+        
+	<!-- This site is optimized with the Yoast SEO plugin v27.2 - https://yoast.com/product/yoast-seo-wordpress/ -->
+	<title>Home | Blue Diamond Consultants</title><link rel="preload" data-rocket-preload="" as="image" href="https://bluediamondconsultants.com/wp-content/uploads/Copy-of-DSC00187.webp" fetchpriority="high">
+	<meta name="description" content="Want real results with a home service business consultant? Call Blue Diamond Consultants today and transform your plumbing, HVAC, and electrical company.">
+	<link rel="canonical" href="https://bluediamondconsultants.com/">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Home | Blue Diamond Consultants">
+	<meta property="og:description" content="Want real results with a home service business consultant? Call Blue Diamond Consultants today and transform your plumbing, HVAC, and electrical company.">
+	<meta property="og:url" content="https://bluediamondconsultants.com/">
+	<meta property="og:site_name" content="Blue Diamond Consultants">
+	<meta property="article:modified_time" content="2025-11-19T02:23:11+00:00">
+	<meta property="og:image" content="https://bluediamondconsultants.com/wp-content/uploads/7620663536833233779-e1755790895957.webp">
+	<meta property="og:image:width" content="1278">
+	<meta property="og:image:height" content="874">
+	<meta property="og:image:type" content="image/webp">
+	<meta name="twitter:card" content="summary_large_image">
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="https://fd.cleantalk.org/">
+
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://bluediamondconsultants.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbluediamondconsultants.com%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://bluediamondconsultants.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbluediamondconsultants.com%2F&amp;format=xml">
+
+
+
+
+
+<link rel="stylesheet" id="cleantalk-public-css-css" href="https://bluediamondconsultants.com/wp-content/cache/background-css/1/bluediamondconsultants.com/wp-content/plugins/cleantalk-spam-protect/css/cleantalk-public.min.css?ver=6.75_1773935880&amp;wpr_t=1774748061" type="text/css" media="all">
+<link rel="stylesheet" id="cleantalk-email-decoder-css-css" href="https://bluediamondconsultants.com/wp-content/plugins/cleantalk-spam-protect/css/cleantalk-email-decoder.min.css?ver=6.75_1773935880" type="text/css" media="all">
+<link data-minify="1" rel="stylesheet" id="dashicons-css" href="https://bluediamondconsultants.com/wp-content/cache/min/1/wp-includes/css/dashicons.min.css?ver=1769705865" type="text/css" media="all">
+<link data-minify="1" rel="stylesheet" id="tailpress-css" href="https://bluediamondconsultants.com/wp-content/cache/background-css/1/bluediamondconsultants.com/wp-content/cache/min/1/wp-content/themes/blue-diamond/css/app.css?ver=1769705865&amp;wpr_t=1774748061" type="text/css" media="all">
+
+
+
+<script type="text/javascript" src="https://bluediamondconsultants.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js" data-rocket-defer="" defer=""></script>
+
+
+<link rel="https://api.w.org/" href="https://bluediamondconsultants.com/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="https://bluediamondconsultants.com/wp-json/wp/v2/pages/65"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://bluediamondconsultants.com/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.9.4">
+<link rel="shortlink" href="https://bluediamondconsultants.com/">
+
+			
+			<link rel="icon" href="https://bluediamondconsultants.com/wp-content/uploads/cropped-Blue-Diamond-favicon-32x32.jpg" sizes="32x32">
+<link rel="icon" href="https://bluediamondconsultants.com/wp-content/uploads/cropped-Blue-Diamond-favicon-192x192.jpg" sizes="192x192">
+<link rel="apple-touch-icon" href="https://bluediamondconsultants.com/wp-content/uploads/cropped-Blue-Diamond-favicon-180x180.jpg">
+<meta name="msapplication-TileImage" content="https://bluediamondconsultants.com/wp-content/uploads/cropped-Blue-Diamond-favicon-270x270.jpg">
+		
+		<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Blue Diamond Consultants",
+  "url": "https://bluediamondconsultants.com/",
+  "logo": "https://bluediamondconsultants.com/wp-content/uploads/blue-diamond-consultants-logo.webp",
+  "sameAs": [
+    "https://www.facebook.com/BlueDiamondConsultants",
+    "https://www.linkedin.com/company/blue-diamond-consultants/"
+  ]
+}
+</script><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>
+<noscript>
+<style id="wpr-lazyload-bg-nostyle">.apbct-check_email_exist-load{--wpr-bg-44102b1f-d6be-43af-b1c7-3f24e31f8645: url('https://bluediamondconsultants.com/wp-content/plugins/cleantalk-spam-protect/css/images/checking_email.gif');}.apbct-check_email_exist-good_email{--wpr-bg-11c05979-313d-4b00-a80d-7fa0f372b8db: url('https://bluediamondconsultants.com/wp-content/plugins/cleantalk-spam-protect/css/images/good_email.svg');}.apbct-check_email_exist-bad_email{--wpr-bg-8917b52c-9a9e-47b2-bd70-47e24a500c5a: url('https://bluediamondconsultants.com/wp-content/plugins/cleantalk-spam-protect/css/images/bad_email.svg');}.accordionItem .accordionTitle:after{--wpr-bg-aa8c6921-cd72-42e3-8c2e-a25370502fc0: url('https://bluediamondconsultants.com/wp-content/uploads/back-arrow-white.svg');}.hero .hero-inner .hero-right:before{--wpr-bg-e10b053d-5fd5-420c-888a-0494f37922d6: url('https://bluediamondconsultants.com/wp-content/uploads/desktop_hero_slant.webp');}.home-hero .hero .hero-inner .hero-right:before{--wpr-bg-9eba8d12-1461-42ca-add4-365ebe8dea2a: url('https://bluediamondconsultants.com/wp-content/uploads/mobile_homepage_slant-1.webp');}header#masthead .headerMainInner #site-navigation>div ul#primary-menu .menu-item:not(.mobile-menu-book-container) .plusMinus .plusMinusInner:after{--wpr-bg-0e4c84a0-b5a5-4252-9ace-9d25aa1ed60a: url('https://bluediamondconsultants.com/wp-content/uploads/icon_up.svg');}.services-intro::before{--wpr-bg-2d2ae990-70f4-453f-93e3-263776505ba6: url('https://bluediamondconsultants.com/wp-content/uploads/mobile_interior_slant-1.webp');}form .frm_fields_container select{--wpr-bg-d96ff9de-4a36-4f64-a6b4-bcf6c79fa1f2: url('https://bluediamondconsultants.com/wp-content/uploads/icon-down-1.svg');}#cats-picker,.services-menu-dropdown{--wpr-bg-78e98f3b-ff3c-43f3-9742-a70435ff1c7c: url('https://bluediamondconsultants.com/wp-content/uploads/icon_down_arrow.svg');}.rll-youtube-player .play{--wpr-bg-dcc4878f-57cb-48eb-99be-972248b10fc9: url('https://bluediamondconsultants.com/wp-content/plugins/wp-rocket/assets/img/youtube.png');}</style>
+</noscript>
+<script type="application/javascript">const rocket_pairs = [{"selector":".apbct-check_email_exist-load","style":".apbct-check_email_exist-load{--wpr-bg-44102b1f-d6be-43af-b1c7-3f24e31f8645: url('https:\/\/bluediamondconsultants.com\/wp-content\/plugins\/cleantalk-spam-protect\/css\/images\/checking_email.gif');}","hash":"44102b1f-d6be-43af-b1c7-3f24e31f8645","url":"https:\/\/bluediamondconsultants.com\/wp-content\/plugins\/cleantalk-spam-protect\/css\/images\/checking_email.gif"},{"selector":".apbct-check_email_exist-good_email","style":".apbct-check_email_exist-good_email{--wpr-bg-11c05979-313d-4b00-a80d-7fa0f372b8db: url('https:\/\/bluediamondconsultants.com\/wp-content\/plugins\/cleantalk-spam-protect\/css\/images\/good_email.svg');}","hash":"11c05979-313d-4b00-a80d-7fa0f372b8db","url":"https:\/\/bluediamondconsultants.com\/wp-content\/plugins\/cleantalk-spam-protect\/css\/images\/good_email.svg"},{"selector":".apbct-check_email_exist-bad_email","style":".apbct-check_email_exist-bad_email{--wpr-bg-8917b52c-9a9e-47b2-bd70-47e24a500c5a: url('https:\/\/bluediamondconsultants.com\/wp-content\/plugins\/cleantalk-spam-protect\/css\/images\/bad_email.svg');}","hash":"8917b52c-9a9e-47b2-bd70-47e24a500c5a","url":"https:\/\/bluediamondconsultants.com\/wp-content\/plugins\/cleantalk-spam-protect\/css\/images\/bad_email.svg"},{"selector":".accordionItem .accordionTitle","style":".accordionItem .accordionTitle:after{--wpr-bg-aa8c6921-cd72-42e3-8c2e-a25370502fc0: url('https:\/\/bluediamondconsultants.com\/wp-content\/uploads\/back-arrow-white.svg');}","hash":"aa8c6921-cd72-42e3-8c2e-a25370502fc0","url":"https:\/\/bluediamondconsultants.com\/wp-content\/uploads\/back-arrow-white.svg"},{"selector":".hero .hero-inner .hero-right","style":".hero .hero-inner .hero-right:before{--wpr-bg-e10b053d-5fd5-420c-888a-0494f37922d6: url('https:\/\/bluediamondconsultants.com\/wp-content\/uploads\/desktop_hero_slant.webp');}","hash":"e10b053d-5fd5-420c-888a-0494f37922d6","url":"https:\/\/bluediamondconsultants.com\/wp-content\/uploads\/desktop_hero_slant.webp"},{"selector":".home-hero .hero .hero-inner .hero-right","style":".home-hero .hero .hero-inner .hero-right:before{--wpr-bg-9eba8d12-1461-42ca-add4-365ebe8dea2a: url('https:\/\/bluediamondconsultants.com\/wp-content\/uploads\/mobile_homepage_slant-1.webp');}","hash":"9eba8d12-1461-42ca-add4-365ebe8dea2a","url":"https:\/\/bluediamondconsultants.com\/wp-content\/uploads\/mobile_homepage_slant-1.webp"},{"selector":"header#masthead .headerMainInner #site-navigation>div ul#primary-menu .menu-item:not(.mobile-menu-book-container) .plusMinus .plusMinusInner","style":"header#masthead .headerMainInner #site-navigation>div ul#primary-menu .menu-item:not(.mobile-menu-book-container) .plusMinus .plusMinusInner:after{--wpr-bg-0e4c84a0-b5a5-4252-9ace-9d25aa1ed60a: url('https:\/\/bluediamondconsultants.com\/wp-content\/uploads\/icon_up.svg');}","hash":"0e4c84a0-b5a5-4252-9ace-9d25aa1ed60a","url":"https:\/\/bluediamondconsultants.com\/wp-content\/uploads\/icon_up.svg"},{"selector":".services-intro","style":".services-intro::before{--wpr-bg-2d2ae990-70f4-453f-93e3-263776505ba6: url('https:\/\/bluediamondconsultants.com\/wp-content\/uploads\/mobile_interior_slant-1.webp');}","hash":"2d2ae990-70f4-453f-93e3-263776505ba6","url":"https:\/\/bluediamondconsultants.com\/wp-content\/uploads\/mobile_interior_slant-1.webp"},{"selector":"form .frm_fields_container select","style":"form .frm_fields_container select{--wpr-bg-d96ff9de-4a36-4f64-a6b4-bcf6c79fa1f2: url('https:\/\/bluediamondconsultants.com\/wp-content\/uploads\/icon-down-1.svg');}","hash":"d96ff9de-4a36-4f64-a6b4-bcf6c79fa1f2","url":"https:\/\/bluediamondconsultants.com\/wp-content\/uploads\/icon-down-1.svg"},{"selector":"#cats-picker,.services-menu-dropdown","style":"#cats-picker,.services-menu-dropdown{--wpr-bg-78e98f3b-ff3c-43f3-9742-a70435ff1c7c: url('https:\/\/bluediamondconsultants.com\/wp-content\/uploads\/icon_down_arrow.svg');}","hash":"78e98f3b-ff3c-43f3-9742-a70435ff1c7c","url":"https:\/\/bluediamondconsultants.com\/wp-content\/uploads\/icon_down_arrow.svg"},{"selector":".rll-youtube-player .play","style":".rll-youtube-player .play{--wpr-bg-dcc4878f-57cb-48eb-99be-972248b10fc9: url('https:\/\/bluediamondconsultants.com\/wp-content\/plugins\/wp-rocket\/assets\/img\/youtube.png');}","hash":"dcc4878f-57cb-48eb-99be-972248b10fc9","url":"https:\/\/bluediamondconsultants.com\/wp-content\/plugins\/wp-rocket\/assets\/img\/youtube.png"}]; const rocket_excluded_pairs = [{"selector":".image-has-border p","style":".image-has-border p:after{--wpr-bg-20483c6c-0de8-4a7f-a82e-5bf33d8cfde5: url('https:\/\/bluediamondconsultants.com\/wp-content\/uploads\/border.svg');}","hash":"20483c6c-0de8-4a7f-a82e-5bf33d8cfde5","url":"https:\/\/bluediamondconsultants.com\/wp-content\/uploads\/border.svg"}];</script><meta name="generator" content="WP Rocket 3.21.0.1" data-wpr-features="wpr_lazyload_css_bg_img wpr_defer_js wpr_minify_concatenate_js wpr_lazyload_images wpr_lazyload_iframes wpr_automatic_lazy_rendering wpr_oci wpr_cache_webp wpr_minify_css wpr_preload_links wpr_desktop"></head>
+<body class="home wp-singular page-template-default page page-id-65 wp-theme-blue-diamond wp-schema-pro-2.11.0" data-aos-easing="ease" data-aos-duration="800" data-aos-delay="0">
+
+
+<div id="page">
+
+		
+		<header id="masthead" class="site-header bg-black">
+			<div class="headerMain text-right">
+				<div class="headerMainInner max-w-1350 mx-auto px-4 py-3 flex justify-between force-between items-start mob:items-center">
+					<div class="headerLogo logo">
+						<a href="https://bluediamondconsultants.com/"><img alt="logo image" class="w-full" src="https://bluediamondconsultants.com/wp-content/uploads/blue-diamond-consultants-logo.webp"></a>
+					</div>
+					<div class="header-right laptop:ml-3 flex items-center gap-3 laptop:mt-4">
+						<nav id="site-navigation" class="main-navigation mob:flex mob:justify-end mob:gap-4 mob:items-center">
+							<button class="menu-toggle mobileOnly bg-none border-none p-0" aria-controls="primary-menu" aria-expanded="false">
+								<div class="leading-0">
+									<img alt="menu icon" class="headerOpenMenu entered lazyloaded" src="https://bluediamondconsultants.com/wp-content/uploads/icon-menu-1.svg" data-lazy-src="/wp-content/uploads/icon-menu-1.svg" data-ll-status="loaded" width="300" height="150"><noscript><img alt="menu icon" class="headerOpenMenu" src="/wp-content/uploads/icon-menu-1.svg" /></noscript>
+									<img alt="menu icon" class="headerCloseMenu entered lazyloaded" src="https://bluediamondconsultants.com/wp-content/uploads/icon-menu-close.svg" data-lazy-src="/wp-content/uploads/icon-menu-close.svg" data-ll-status="loaded" width="300" height="150"><noscript><img alt="menu icon" class="headerCloseMenu" src="/wp-content/uploads/icon-menu-close.svg" /></noscript>
+								</div>
+							</button>
+							<div class="menu-main-menu-container"><ul id="primary-menu" class="menu p-0 m-0"><li id="menu-item-449" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-449"><a href="https://bluediamondconsultants.com/about/">About Blue Diamond</a><div class="plusMinus mobileOnly absolute right-0 top-0"><div class="plusMinusInner center-xy" data-rocket-lazy-bg-0e4c84a0-b5a5-4252-9ace-9d25aa1ed60a="loaded"></div></div>
+<div class="sub-menu-wrap"><div class="sub-menu-wrapper-inner"><ul class="sub-menu">
+	<li id="menu-item-837" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-837"><a href="https://bluediamondconsultants.com/about/meet-the-team/">Meet the Team</a><div class="plusMinus mobileOnly absolute right-0 top-0"><div class="plusMinusInner center-xy" data-rocket-lazy-bg-0e4c84a0-b5a5-4252-9ace-9d25aa1ed60a="loaded"></div></div></li>
+	<li id="menu-item-453" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-453"><a href="https://bluediamondconsultants.com/about/reviews/">Testimonials</a><div class="plusMinus mobileOnly absolute right-0 top-0"><div class="plusMinusInner center-xy" data-rocket-lazy-bg-0e4c84a0-b5a5-4252-9ace-9d25aa1ed60a="loaded"></div></div></li>
+	<li id="menu-item-838" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-838"><a href="https://bluediamondconsultants.com/about/video-resources/">Video Library</a><div class="plusMinus mobileOnly absolute right-0 top-0"><div class="plusMinusInner center-xy" data-rocket-lazy-bg-0e4c84a0-b5a5-4252-9ace-9d25aa1ed60a="loaded"></div></div></li>
+	<li id="menu-item-1274" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1274"><a href="https://bluediamondconsultants.com/blogs/">Blog</a><div class="plusMinus mobileOnly absolute right-0 top-0"><div class="plusMinusInner center-xy" data-rocket-lazy-bg-0e4c84a0-b5a5-4252-9ace-9d25aa1ed60a="loaded"></div></div></li>
+</ul></div></div>
+</li>
+<li id="menu-item-1268" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1268"><a href="https://bluediamondconsultants.com/home-service-business-coaching/">Our Coaching</a><div class="plusMinus mobileOnly absolute right-0 top-0"><div class="plusMinusInner center-xy" data-rocket-lazy-bg-0e4c84a0-b5a5-4252-9ace-9d25aa1ed60a="loaded"></div></div></li>
+<li id="menu-item-1267" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1267"><a href="https://bluediamondconsultants.com/who-we-serve/">Who We Serve</a><div class="plusMinus mobileOnly absolute right-0 top-0"><div class="plusMinusInner center-xy" data-rocket-lazy-bg-0e4c84a0-b5a5-4252-9ace-9d25aa1ed60a="loaded"></div></div>
+<div class="sub-menu-wrap"><div class="sub-menu-wrapper-inner"><ul class="sub-menu">
+	<li id="menu-item-1272" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1272"><a href="https://bluediamondconsultants.com/home-service-business-coaching/hvac/">HVAC Coaching</a><div class="plusMinus mobileOnly absolute right-0 top-0"><div class="plusMinusInner center-xy" data-rocket-lazy-bg-0e4c84a0-b5a5-4252-9ace-9d25aa1ed60a="loaded"></div></div></li>
+	<li id="menu-item-1271" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1271"><a href="https://bluediamondconsultants.com/home-service-business-coaching/plumbing/">Plumbing Coaching</a><div class="plusMinus mobileOnly absolute right-0 top-0"><div class="plusMinusInner center-xy" data-rocket-lazy-bg-0e4c84a0-b5a5-4252-9ace-9d25aa1ed60a="loaded"></div></div></li>
+	<li id="menu-item-1270" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1270"><a href="https://bluediamondconsultants.com/home-service-business-coaching/electrical/">Electrical Coaching</a><div class="plusMinus mobileOnly absolute right-0 top-0"><div class="plusMinusInner center-xy" data-rocket-lazy-bg-0e4c84a0-b5a5-4252-9ace-9d25aa1ed60a="loaded"></div></div></li>
+	<li id="menu-item-1449" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1449"><a href="https://bluediamondconsultants.com/home-service-business-coaching/other-trades-business-coach/">Other Trades Coaching</a><div class="plusMinus mobileOnly absolute right-0 top-0"><div class="plusMinusInner center-xy" data-rocket-lazy-bg-0e4c84a0-b5a5-4252-9ace-9d25aa1ed60a="loaded"></div></div></li>
+</ul></div></div>
+</li>
+<li id="menu-item-1266" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1266"><a href="https://bluediamondconsultants.com/events/">Events</a><div class="plusMinus mobileOnly absolute right-0 top-0"><div class="plusMinusInner center-xy" data-rocket-lazy-bg-0e4c84a0-b5a5-4252-9ace-9d25aa1ed60a="loaded"></div></div></li>
+<li id="menu-item-455" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-455"><a href="https://bluediamondconsultants.com/contact/">Contact</a><div class="plusMinus mobileOnly absolute right-0 top-0"><div class="plusMinusInner center-xy" data-rocket-lazy-bg-0e4c84a0-b5a5-4252-9ace-9d25aa1ed60a="loaded"></div></div></li>
+</ul></div>						</nav><!-- #site-navigation -->
+						<div class="header-contact mb-1 desktopOnly flex justify-end items-center ">
+							<a href="https://bluediamondconsultants.com/#contact" class="se-widget-button requestBtn btn mt-0 ghostBtn yellowBtn">Get Your Free Session</a>						</div>
+					</div>
+				</div>
+			</div>
+		</header><!-- #masthead -->
+
+
+	<div id="content">
+				<main>
+<div class="home-page page-top">
+    <div class="home-hero">
+        <div class="hero bg-black laptop:!bg-black" style="background: url(https://bluediamondconsultants.com/wp-content/uploads/Copy-of-DSC00187.webp) center / cover;">
+    <div class="overlay black-overlay mobileOnly not-on-home"></div>
+	<div class="hero-inner z-10 flex mob:flex-wrap">
+        <div class="hero-left pt-20 pb-24 px-5 mob:px-2 mob:py-36 w-full">
+            <div class="hero-left-inner max-w-550 w-full mx-auto mob:text-center">
+                <h1 class="hero-top-text">Home Service Business Consultant</h1>
+                <h2 class="hero-middle-text"><span>Radically Change</span> Your Home Service Business.</h2>
+                <h2 class="hero-bottom-text">Experience world-class coaching that sharpens your leadership and fuels your growth.</h2>
+                <div class="hero-button aos-init aos-animate" data-aos="zoom-in">
+                    <a href="https://bluediamondconsultants.com/#contact" class="se-widget-button requestBtn btn  yellowBtn">Get Your Free Session</a>                </div>
+            </div>
+        </div>
+        <div class="hero-right laptop:max-w-[45%] w-full" style="background: url(https://bluediamondconsultants.com/wp-content/uploads/Copy-of-DSC00187.webp) center / cover;" data-rocket-lazy-bg-e10b053d-5fd5-420c-888a-0494f37922d6="loaded" data-rocket-lazy-bg-9eba8d12-1461-42ca-add4-365ebe8dea2a="loaded"></div>
+	</div>
+</div>
+    </div>    
+	<div class="home-hamster">
+		<div class="hamster-section my-12 mob:mt-6 mob:mb-12">
+    <div class="hamster-inner max-w-1200 w-full mx-auto px-2 mob:px-3">
+        <div class="hamster-top mb-10 mob:mb-6">
+            <h2 style="text-align: center;">Ready To Stop Spinning and Start Scaling?</h2>
+<p>&nbsp;</p>
+        </div>
+        <div class="hamster-bottom flex mob:flex-wrap justify-between">
+                                <div class="hamster-item max-w-[375px] w-full text-center h4-highlight black-highlight">
+                        <pre style="text-align: center;"><img decoding="async" class="alignnone size-full wp-image-1149 aligncenter entered lazyloaded" src="https://bluediamondconsultants.com/wp-content/uploads/icon-step-1.svg" alt="" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/icon-step-1.svg" data-ll-status="loaded" width="300" height="150"><noscript><img decoding="async" class="alignnone size-full wp-image-1149 aligncenter" src="https://bluediamondconsultants.com/wp-content/uploads/icon-step-1.svg" alt="" /></noscript></pre>
+<h4 style="text-align: center;">Free Clarity Now</h4>
+<p style="text-align: center;"><span style="font-weight: 400;">Book your free 30-minute Clarity Call by filling out the form. We’ll zero in on the most pressing issue in your business and offer direct insight into what to do about it. All gratis.</span></p>
+                    </div>
+                                    <div class="hamster-item max-w-[375px] w-full text-center h4-highlight black-highlight">
+                        <pre style="text-align: center;"><img decoding="async" class="wp-image-1150 size-full aligncenter entered lazyloaded" src="https://bluediamondconsultants.com/wp-content/uploads/icon-step-2.svg" alt="" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/icon-step-2.svg" data-ll-status="loaded" width="300" height="150"><noscript><img decoding="async" class="wp-image-1150 size-full aligncenter" src="https://bluediamondconsultants.com/wp-content/uploads/icon-step-2.svg" alt="" /></noscript></pre>
+<h4 style="text-align: center;">Get Real Guidance</h4>
+<p style="text-align: center;">Each week, you’ll meet with us. We tackle what’s most urgent and most important, <em>together</em>. Far from theoretical, the support we offer is hands-on, ultra-specific, and rooted in experience.</p>
+                    </div>
+                                    <div class="hamster-item max-w-[375px] w-full text-center h4-highlight black-highlight">
+                        <pre style="text-align: center;"><img decoding="async" class="wp-image-1151 size-full aligncenter entered lazyloaded" src="https://bluediamondconsultants.com/wp-content/uploads/icon-step-3.svg" alt="" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/icon-step-3.svg" data-ll-status="loaded" width="300" height="150"><noscript><img decoding="async" class="wp-image-1151 size-full aligncenter" src="https://bluediamondconsultants.com/wp-content/uploads/icon-step-3.svg" alt="" /></noscript></pre>
+<h4 style="text-align: center;">Build Undeniable Growth</h4>
+<p style="text-align: center;"><span style="font-weight: 400;">Over time, operations run smoother and revenue grows. You regain control and lead with a level of empowered purpose you didn’t know was possible.</span></p>
+                    </div>
+                        </div>
+        <div class="hamster-bottom mt-2 text-center">
+            <a href="https://bluediamondconsultants.com/#contact" class="se-widget-button requestBtn btn  yellowBtn">Get Your Free Session</a>        </div>
+    </div>
+</div> 
+	</div>
+    <div class="group bg-grey py-[1px]">
+        <div class="home-team my-14 mob:my-5">
+            <div class="home-team-inner max-w-1200 w-full mx-auto px-3 mob:px-5 flex mob:flex-wrap justify-between items-center">
+                <div class="home-team-left max-w-550 w-full mob:order-2">
+                    <h2>Coaching Built for the Real World of the Trades</h2>
+<p>Most owners hear “business coaching” and picture generic advice from someone who’s never had to make payroll in a slow season. That’s not us. We’ve owned, scaled, and sold home service companies. We know the industry, the numbers, and the pressure.</p>
+<p>You might be staring at a P&amp;L you don’t fully understand or fighting fires every day while jobs fall through the cracks. Maybe your best tech just quit, your scheduling is a mess, or your software is costing more than it’s saving. We’ve seen it all. And fixed it.</p>
+<p>At Blue Diamond, we deliver high-touch coaching through world-class support and the highest level of accountability to scale your business now. We clarify your financials until you know exactly where you stand. We work alongside you to refine your operations, transform your leadership, and put systems in place that help your business grow with ease. Every step is customized to what you’re dealing with right now—so the weekly wins stack up, the profits climb, and you step fully into the leader your business needs.<br>
+<a class="btn ghostBtn" href="https://bluediamondconsultants.com/home-service-business-coaching/">Our Strategy</a></p>
+                </div>
+                <div class="home-team-right max-w-550 w-full image-has-border mob:px-7">
+                    <p data-rocket-lazy-bg-20483c6c-0de8-4a7f-a82e-5bf33d8cfde5="excluded"><img decoding="async" class="alignnone wp-image-2045 size-full" src="https://bluediamondconsultants.com/wp-content/uploads/Copy-of-DSC00060.webp" alt="" width="900" height="600"></p>
+                </div>
+            </div>
+        </div>
+        <div class="home-values mt-14 mb-20 mob:my-7">
+            <div class="home-values-inner max-w-1050 w-full mx-auto px-2 mob:px-5">
+                <div class="home-values-top mb-10 mob:mb-6">
+                    <h2 style="text-align: center;">How We Operate</h2>
+                </div>
+                <div class="home-values-bottom flex">
+                    <div class="home-values-bottom-inner flex flex-wrap justify-between gap-y-8 desktopOnly">
+                                                        <div class="home-values-item max-w-500 w-full bg-white rounded-brand border-solid border border-[#c5c5c5] p-6 h4-highlight blue-highlight  ">
+                                    <p><img decoding="async" class="alignnone size-full wp-image-1154 aligncenter entered lazyloaded" src="https://bluediamondconsultants.com/wp-content/uploads/icon-value-1.svg" alt="" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/icon-value-1.svg" data-ll-status="loaded" width="300" height="150"><noscript><img decoding="async" class="alignnone size-full wp-image-1154 aligncenter" src="https://bluediamondconsultants.com/wp-content/uploads/icon-value-1.svg" alt="" /></noscript></p>
+<h4 style="text-align: center;">Building Clarity</h4>
+<p>We make the complex simple. Whether it’s cleaning up your P&amp;L, tightening dispatch, or deciding who to hire next, you’ll always know exactly where you stand and what to do next.</p>
+                                </div>
+                                                            <div class="home-values-item max-w-500 w-full bg-white rounded-brand border-solid border border-[#c5c5c5] p-6 h4-highlight blue-highlight  ">
+                                    <p><img decoding="async" class="wp-image-1155 size-full aligncenter entered lazyloaded" src="https://bluediamondconsultants.com/wp-content/uploads/icon-value-2.svg" alt="" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/icon-value-2.svg" data-ll-status="loaded" width="300" height="150"><noscript><img decoding="async" class="wp-image-1155 size-full aligncenter" src="https://bluediamondconsultants.com/wp-content/uploads/icon-value-2.svg" alt="" /></noscript></p>
+<h4 style="text-align: center;">Integrity Illuminated</h4>
+<p>Every recommendation is in your best interest. We’ll tell you the truth about your margins, your leadership gaps, and your team performance. Because real change comes from direct honesty.</p>
+                                </div>
+                                                            <div class="home-values-item max-w-500 w-full bg-white rounded-brand border-solid border border-[#c5c5c5] p-6 h4-highlight blue-highlight  ">
+                                    <p><img decoding="async" class="wp-image-1156 size-full aligncenter entered lazyloaded" src="https://bluediamondconsultants.com/wp-content/uploads/icon-value-3.svg" alt="" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/icon-value-3.svg" data-ll-status="loaded" width="300" height="150"><noscript><img decoding="async" class="wp-image-1156 size-full aligncenter" src="https://bluediamondconsultants.com/wp-content/uploads/icon-value-3.svg" alt="" /></noscript></p>
+<h4 style="text-align: center;">Collaborative Brilliance</h4>
+<p>We bring decades of lived experience across sales, marketing, operations, and finance. You bring your full presence and commitment. Together, we create strategies you can actually use in the real world, today.</p>
+                                </div>
+                                                            <div class="home-values-item max-w-500 w-full bg-white rounded-brand border-solid border border-[#c5c5c5] p-6 h4-highlight blue-highlight  ">
+                                    <p><img decoding="async" class="wp-image-1157 size-full aligncenter entered lazyloaded" src="https://bluediamondconsultants.com/wp-content/uploads/icon-value-4.svg" alt="" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/icon-value-4.svg" data-ll-status="loaded" width="300" height="150"><noscript><img decoding="async" class="wp-image-1157 size-full aligncenter" src="https://bluediamondconsultants.com/wp-content/uploads/icon-value-4.svg" alt="" /></noscript></p>
+<h4 style="text-align: center;">Strength in Synergy</h4>
+<p>The magic happens when your agency meets our expertise. That’s where a hiring process starts running itself, software finally earns its keep, and revenue stops riding the season.</p>
+                                </div>
+                                                </div>
+                    <div class="home-values-bottom-inner mobileOnly w-full">
+                        <div class="reviews glide glide1 glide--ltr glide--carousel glide--swipeable">
+                            <div class="glide__track" data-glide-el="track">
+                                <ul class="glide__slides" style="transition: transform cubic-bezier(0.165, 0.84, 0.44, 1); width: 15440px; transform: translate3d(-3860px, 0px, 0px);">
+                                                                                <div class="home-values-item-container glide__slide pb-1 glide__slide--clone" style="width: 1920px; margin-right: 5px;">
+                                                <div class="home-values-item max-w-500 w-full bg-white rounded-brand border-solid border border-[#c5c5c5] p-6 h4-highlight blue-highlight">
+                                                    <p><img decoding="async" class="wp-image-1156 size-full aligncenter" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/icon-value-3.svg" width="300" height="150"><noscript><img decoding="async" class="wp-image-1156 size-full aligncenter" src="https://bluediamondconsultants.com/wp-content/uploads/icon-value-3.svg" alt="" /></noscript></p>
+<h4 style="text-align: center;">Collaborative Brilliance</h4>
+<p>We bring decades of lived experience across sales, marketing, operations, and finance. You bring your full presence and commitment. Together, we create strategies you can actually use in the real world, today.</p>
+                                                </div>
+                                            </div><div class="home-values-item-container glide__slide pb-1 glide__slide--clone" style="width: 1920px; margin-left: 5px; margin-right: 5px;">
+                                                <div class="home-values-item max-w-500 w-full bg-white rounded-brand border-solid border border-[#c5c5c5] p-6 h4-highlight blue-highlight">
+                                                    <p><img decoding="async" class="wp-image-1157 size-full aligncenter" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/icon-value-4.svg" width="300" height="150"><noscript><img decoding="async" class="wp-image-1157 size-full aligncenter" src="https://bluediamondconsultants.com/wp-content/uploads/icon-value-4.svg" alt="" /></noscript></p>
+<h4 style="text-align: center;">Strength in Synergy</h4>
+<p>The magic happens when your agency meets our expertise. That’s where a hiring process starts running itself, software finally earns its keep, and revenue stops riding the season.</p>
+                                                </div>
+                                            </div><div class="home-values-item-container glide__slide pb-1 glide__slide--active" style="width: 1920px; margin-left: 5px; margin-right: 5px;">
+                                                <div class="home-values-item max-w-500 w-full bg-white rounded-brand border-solid border border-[#c5c5c5] p-6 h4-highlight blue-highlight">
+                                                    <p><img decoding="async" class="alignnone size-full wp-image-1154 aligncenter" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/icon-value-1.svg" width="300" height="150"><noscript><img decoding="async" class="alignnone size-full wp-image-1154 aligncenter" src="https://bluediamondconsultants.com/wp-content/uploads/icon-value-1.svg" alt="" /></noscript></p>
+<h4 style="text-align: center;">Building Clarity</h4>
+<p>We make the complex simple. Whether it’s cleaning up your P&amp;L, tightening dispatch, or deciding who to hire next, you’ll always know exactly where you stand and what to do next.</p>
+                                                </div>
+                                            </div>
+                                                                                    <div class="home-values-item-container glide__slide pb-1" style="width: 1920px; margin-left: 5px; margin-right: 5px;">
+                                                <div class="home-values-item max-w-500 w-full bg-white rounded-brand border-solid border border-[#c5c5c5] p-6 h4-highlight blue-highlight">
+                                                    <p><img decoding="async" class="wp-image-1155 size-full aligncenter" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/icon-value-2.svg" width="300" height="150"><noscript><img decoding="async" class="wp-image-1155 size-full aligncenter" src="https://bluediamondconsultants.com/wp-content/uploads/icon-value-2.svg" alt="" /></noscript></p>
+<h4 style="text-align: center;">Integrity Illuminated</h4>
+<p>Every recommendation is in your best interest. We’ll tell you the truth about your margins, your leadership gaps, and your team performance. Because real change comes from direct honesty.</p>
+                                                </div>
+                                            </div>
+                                                                                    <div class="home-values-item-container glide__slide pb-1" style="width: 1920px; margin-left: 5px; margin-right: 5px;">
+                                                <div class="home-values-item max-w-500 w-full bg-white rounded-brand border-solid border border-[#c5c5c5] p-6 h4-highlight blue-highlight">
+                                                    <p><img decoding="async" class="wp-image-1156 size-full aligncenter" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/icon-value-3.svg" width="300" height="150"><noscript><img decoding="async" class="wp-image-1156 size-full aligncenter" src="https://bluediamondconsultants.com/wp-content/uploads/icon-value-3.svg" alt="" /></noscript></p>
+<h4 style="text-align: center;">Collaborative Brilliance</h4>
+<p>We bring decades of lived experience across sales, marketing, operations, and finance. You bring your full presence and commitment. Together, we create strategies you can actually use in the real world, today.</p>
+                                                </div>
+                                            </div>
+                                                                                    <div class="home-values-item-container glide__slide pb-1" style="width: 1920px; margin-left: 5px; margin-right: 5px;">
+                                                <div class="home-values-item max-w-500 w-full bg-white rounded-brand border-solid border border-[#c5c5c5] p-6 h4-highlight blue-highlight">
+                                                    <p><img decoding="async" class="wp-image-1157 size-full aligncenter" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/icon-value-4.svg" width="300" height="150"><noscript><img decoding="async" class="wp-image-1157 size-full aligncenter" src="https://bluediamondconsultants.com/wp-content/uploads/icon-value-4.svg" alt="" /></noscript></p>
+<h4 style="text-align: center;">Strength in Synergy</h4>
+<p>The magic happens when your agency meets our expertise. That’s where a hiring process starts running itself, software finally earns its keep, and revenue stops riding the season.</p>
+                                                </div>
+                                            </div>
+                                                                        <div class="home-values-item-container glide__slide pb-1 glide__slide--clone" style="width: 1920px; margin-left: 5px; margin-right: 5px;">
+                                                <div class="home-values-item max-w-500 w-full bg-white rounded-brand border-solid border border-[#c5c5c5] p-6 h4-highlight blue-highlight">
+                                                    <p><img decoding="async" class="alignnone size-full wp-image-1154 aligncenter" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/icon-value-1.svg" width="300" height="150"><noscript><img decoding="async" class="alignnone size-full wp-image-1154 aligncenter" src="https://bluediamondconsultants.com/wp-content/uploads/icon-value-1.svg" alt="" /></noscript></p>
+<h4 style="text-align: center;">Building Clarity</h4>
+<p>We make the complex simple. Whether it’s cleaning up your P&amp;L, tightening dispatch, or deciding who to hire next, you’ll always know exactly where you stand and what to do next.</p>
+                                                </div>
+                                            </div><div class="home-values-item-container glide__slide pb-1 glide__slide--clone" style="width: 1920px; margin-left: 5px;">
+                                                <div class="home-values-item max-w-500 w-full bg-white rounded-brand border-solid border border-[#c5c5c5] p-6 h4-highlight blue-highlight">
+                                                    <p><img decoding="async" class="wp-image-1155 size-full aligncenter" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/icon-value-2.svg" width="300" height="150"><noscript><img decoding="async" class="wp-image-1155 size-full aligncenter" src="https://bluediamondconsultants.com/wp-content/uploads/icon-value-2.svg" alt="" /></noscript></p>
+<h4 style="text-align: center;">Integrity Illuminated</h4>
+<p>Every recommendation is in your best interest. We’ll tell you the truth about your margins, your leadership gaps, and your team performance. Because real change comes from direct honesty.</p>
+                                                </div>
+                                            </div></ul>
+                            </div>
+                            <div class="glide__arrows blue-arrows" data-glide-el="controls">
+                                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img class="w-[25px] entered lazyloaded" id="api-go-backward" src="https://bluediamondconsultants.com/wp-content/uploads/icon_arrow-left.svg" alt="left arrow" data-lazy-src="/wp-content/uploads/icon_arrow-left.svg" data-ll-status="loaded" width="300" height="150"><noscript><img class="w-[25px]" id="api-go-backward" src="/wp-content/uploads/icon_arrow-left.svg" alt="left arrow" /></noscript></button>
+                                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img class="w-[25px] entered lazyloaded" id="api-go-forward" src="https://bluediamondconsultants.com/wp-content/uploads/icon_arrow-right.svg" alt="right arrow" data-lazy-src="/wp-content/uploads/icon_arrow-right.svg" data-ll-status="loaded" width="300" height="150"><noscript><img class="w-[25px]" id="api-go-forward" src="/wp-content/uploads/icon_arrow-right.svg" alt="right arrow" /></noscript></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home-reviews bg-black py-[1px]">
+		<div class="reviews-content bg-black pt-20 pb-16 mob:py-7">
+			<div class="reviews-content-inner max-w-1100 w-full mx-auto px-5 flex mob:flex-wrap justify-between items-center">
+				<div class="reviews-content-left max-w-450 w-full laptop:pr-4 mob:order-2">
+					<h2><span id="stay">Business Coaching</span> Reviews</h2>
+<h5>“I’ve learned the skills and strategies of growing and exiting a business, and I’ve enjoyed some big wins because of it. Not everyone has this skillset, and it’s even rarer in the home service industry. But Jim Clark is nailing it and sharing everything he’s learned to grow and exit a service business.”</h5>
+<p>-Kevin Harrington, Original Shark on Shark Tank</p>
+				</div>
+				<div class="reviews-content-right max-w-600 w-full laptop:pl-8">
+					<p><div loading="lazy" style="border: none; overflow: hidden;" src="cid:frame-6B8D61CFBBD0DBF9F08F87A8A3793DBD@mhtml.blink" width="560" height="314" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.facebook.com/plugins/video.php?height=314&amp;href=https%3A%2F%2Fwww.facebook.com%2FBlueDiamondConsultants%2Fvideos%2F1039536317287634%2F&amp;show_text=false&amp;width=560&amp;t=0" data-ll-status="loading" class="entered lazyloading" data-original-tag="iframe"><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body></body></html></div><noscript><iframe style="border: none; overflow: hidden;" src="https://www.facebook.com/plugins/video.php?height=314&amp;href=https%3A%2F%2Fwww.facebook.com%2FBlueDiamondConsultants%2Fvideos%2F1039536317287634%2F&amp;show_text=false&amp;width=560&amp;t=0" width="560" height="314" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen"></iframe></noscript></p>
+				</div>
+			</div>
+		</div>
+		<div class="review-items max-w-1050 w-full mx-auto px-4 mob:px-5 mb-14 mob:mb-6">
+			<div class="review-items-inner">
+				<div class="review-items-list">
+					<div class="reviews glide glide3mob1 glide--ltr glide--carousel glide--swipeable">
+						<div class="glide__track" data-glide-el="track">
+							<ul class="glide__slides" style="transition: transform cubic-bezier(0.165, 0.84, 0.44, 1); width: 5790px; transform: translate3d(-1930px, 0px, 0px);">
+																		<div class="review-item glide__slide first-p-mt-0 glide__slide--clone" style="width: 633.333px; margin-right: 5px;">
+											<div class="reviews-item-inner max-w-[320px] w-full bg-white border border-solid border-black py-12 px-6 mob:p-6 rounded-brand mob:mx-auto aos-init" data-aos="flip-up">
+												<p><img decoding="async" class="aligncenter wp-image-2003" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2075%2075'%3E%3C/svg%3E" alt="" width="75" height="75" data-lazy-srcset="https://bluediamondconsultants.com/wp-content/uploads/stellar_circle.png.webp 224w,https://bluediamondconsultants.com/wp-content/uploads/stellar_circle-150x150.png 150w" data-lazy-sizes="(max-width: 75px) 100vw, 75px" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/stellar_circle.png.webp"><noscript><img decoding="async" class="aligncenter wp-image-2003" src="https://bluediamondconsultants.com/wp-content/uploads/stellar_circle.png.webp" alt="" width="75" height="75" srcset="https://bluediamondconsultants.com/wp-content/uploads/stellar_circle.png.webp 224w,https://bluediamondconsultants.com/wp-content/uploads/stellar_circle-150x150.png 150w" sizes="(max-width: 75px) 100vw, 75px" /></noscript></p>
+<p>“They treat clients like family with unwavering support!!! Vast knowledge across many facets of business and the trades. Quick to respond to urgent matters. Introduction to preferred vendors and industry professionals. Weekly 1 on 1 meetings, and weekly open discussions with other industry professionals.”</p>
+<p>Stellar Plumbing</p>
+											</div>
+										</div><div class="review-item glide__slide first-p-mt-0 glide__slide--clone" style="width: 633.333px; margin-left: 5px; margin-right: 5px;">
+											<div class="reviews-item-inner max-w-[320px] w-full bg-white border border-solid border-black py-12 px-6 mob:p-6 rounded-brand mob:mx-auto aos-init" data-aos="flip-up">
+												<p><img decoding="async" class="wp-image-1989 aligncenter" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20142%2075'%3E%3C/svg%3E" alt="Jersey Boys" width="142" height="75" data-lazy-srcset="https://bluediamondconsultants.com/wp-content/uploads/Jersey-Boys-logo.png 309w,https://bluediamondconsultants.com/wp-content/uploads/Jersey-Boys-logo-300x158.png.webp 300w" data-lazy-sizes="(max-width: 142px) 100vw, 142px" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/Jersey-Boys-logo.png"><noscript><img decoding="async" class="wp-image-1989 aligncenter" src="https://bluediamondconsultants.com/wp-content/uploads/Jersey-Boys-logo.png" alt="Jersey Boys" width="142" height="75" srcset="https://bluediamondconsultants.com/wp-content/uploads/Jersey-Boys-logo.png 309w,https://bluediamondconsultants.com/wp-content/uploads/Jersey-Boys-logo-300x158.png.webp 300w" sizes="(max-width: 142px) 100vw, 142px" /></noscript></p>
+<p>“Blue Diamond Consultants have been an invaluable partner to our business. Their greatest impact has been educating us in financial literacy, which has transformed the way we operate. They’re always available whenever we need support and consistently hold us accountable. Their guidance pushes us to take action in the areas of our business that need it most. The training and coaching they provide not only keep us sharp but also elevate our entire team’s performance.”</p>
+<p>Jersey Boys Plumbing</p>
+											</div>
+										</div><div class="review-item glide__slide first-p-mt-0 glide__slide--clone" style="width: 633.333px; margin-left: 5px; margin-right: 5px;">
+											<div class="reviews-item-inner max-w-[320px] w-full bg-white border border-solid border-black py-12 px-6 mob:p-6 rounded-brand mob:mx-auto aos-init" data-aos="flip-up">
+												<p><img decoding="async" class="wp-image-2074 aligncenter" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20109%2075'%3E%3C/svg%3E" alt="All American" width="109" height="75" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/download-5-e1768938532760.webp"><noscript><img decoding="async" class="wp-image-2074 aligncenter" src="https://bluediamondconsultants.com/wp-content/uploads/download-5-e1768938532760.webp" alt="All American" width="109" height="75" /></noscript></p>
+<p>“The Blue Diamond Consultants Group keeps us accountable and focused on meaningful action, helping us push past daily fires to truly move the needle. They’ve guided us in driving growth, upgrading processes, and staying committed to what matters most. When challenges arise, they provide steady support and follow-through. Most recently, their biggest impact has been in helping us hire, train, and lead two outstanding managers.”</p>
+<p>All American Home Service</p>
+											</div>
+										</div><div class="review-item glide__slide first-p-mt-0 glide__slide--active" style="width: 633.333px; margin-left: 5px; margin-right: 5px;">
+											<div class="reviews-item-inner max-w-[320px] w-full bg-white border border-solid border-black py-12 px-6 mob:p-6 rounded-brand mob:mx-auto aos-init" data-aos="flip-up">
+												<p><img decoding="async" class="aligncenter wp-image-2003" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2075%2075'%3E%3C/svg%3E" alt="" width="75" height="75" data-lazy-srcset="https://bluediamondconsultants.com/wp-content/uploads/stellar_circle.png.webp 224w,https://bluediamondconsultants.com/wp-content/uploads/stellar_circle-150x150.png 150w" data-lazy-sizes="(max-width: 75px) 100vw, 75px" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/stellar_circle.png.webp"><noscript><img decoding="async" class="aligncenter wp-image-2003" src="https://bluediamondconsultants.com/wp-content/uploads/stellar_circle.png.webp" alt="" width="75" height="75" srcset="https://bluediamondconsultants.com/wp-content/uploads/stellar_circle.png.webp 224w,https://bluediamondconsultants.com/wp-content/uploads/stellar_circle-150x150.png 150w" sizes="(max-width: 75px) 100vw, 75px" /></noscript></p>
+<p>“They treat clients like family with unwavering support!!! Vast knowledge across many facets of business and the trades. Quick to respond to urgent matters. Introduction to preferred vendors and industry professionals. Weekly 1 on 1 meetings, and weekly open discussions with other industry professionals.”</p>
+<p>Stellar Plumbing</p>
+											</div>
+										</div>
+																			<div class="review-item glide__slide first-p-mt-0" style="width: 633.333px; margin-left: 5px; margin-right: 5px;">
+											<div class="reviews-item-inner max-w-[320px] w-full bg-white border border-solid border-black py-12 px-6 mob:p-6 rounded-brand mob:mx-auto aos-init" data-aos="flip-up">
+												<p><img decoding="async" class="wp-image-1989 aligncenter" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20142%2075'%3E%3C/svg%3E" alt="Jersey Boys" width="142" height="75" data-lazy-srcset="https://bluediamondconsultants.com/wp-content/uploads/Jersey-Boys-logo.png 309w,https://bluediamondconsultants.com/wp-content/uploads/Jersey-Boys-logo-300x158.png.webp 300w" data-lazy-sizes="(max-width: 142px) 100vw, 142px" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/Jersey-Boys-logo.png"><noscript><img decoding="async" class="wp-image-1989 aligncenter" src="https://bluediamondconsultants.com/wp-content/uploads/Jersey-Boys-logo.png" alt="Jersey Boys" width="142" height="75" srcset="https://bluediamondconsultants.com/wp-content/uploads/Jersey-Boys-logo.png 309w,https://bluediamondconsultants.com/wp-content/uploads/Jersey-Boys-logo-300x158.png.webp 300w" sizes="(max-width: 142px) 100vw, 142px" /></noscript></p>
+<p>“Blue Diamond Consultants have been an invaluable partner to our business. Their greatest impact has been educating us in financial literacy, which has transformed the way we operate. They’re always available whenever we need support and consistently hold us accountable. Their guidance pushes us to take action in the areas of our business that need it most. The training and coaching they provide not only keep us sharp but also elevate our entire team’s performance.”</p>
+<p>Jersey Boys Plumbing</p>
+											</div>
+										</div>
+																			<div class="review-item glide__slide first-p-mt-0" style="width: 633.333px; margin-left: 5px; margin-right: 5px;">
+											<div class="reviews-item-inner max-w-[320px] w-full bg-white border border-solid border-black py-12 px-6 mob:p-6 rounded-brand mob:mx-auto aos-init" data-aos="flip-up">
+												<p><img decoding="async" class="wp-image-2074 aligncenter" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20109%2075'%3E%3C/svg%3E" alt="All American" width="109" height="75" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/download-5-e1768938532760.webp"><noscript><img decoding="async" class="wp-image-2074 aligncenter" src="https://bluediamondconsultants.com/wp-content/uploads/download-5-e1768938532760.webp" alt="All American" width="109" height="75" /></noscript></p>
+<p>“The Blue Diamond Consultants Group keeps us accountable and focused on meaningful action, helping us push past daily fires to truly move the needle. They’ve guided us in driving growth, upgrading processes, and staying committed to what matters most. When challenges arise, they provide steady support and follow-through. Most recently, their biggest impact has been in helping us hire, train, and lead two outstanding managers.”</p>
+<p>All American Home Service</p>
+											</div>
+										</div>
+																<div class="review-item glide__slide first-p-mt-0 glide__slide--clone" style="width: 633.333px; margin-left: 5px; margin-right: 5px;">
+											<div class="reviews-item-inner max-w-[320px] w-full bg-white border border-solid border-black py-12 px-6 mob:p-6 rounded-brand mob:mx-auto aos-init" data-aos="flip-up">
+												<p><img decoding="async" class="aligncenter wp-image-2003" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2075%2075'%3E%3C/svg%3E" alt="" width="75" height="75" data-lazy-srcset="https://bluediamondconsultants.com/wp-content/uploads/stellar_circle.png.webp 224w,https://bluediamondconsultants.com/wp-content/uploads/stellar_circle-150x150.png 150w" data-lazy-sizes="(max-width: 75px) 100vw, 75px" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/stellar_circle.png.webp"><noscript><img decoding="async" class="aligncenter wp-image-2003" src="https://bluediamondconsultants.com/wp-content/uploads/stellar_circle.png.webp" alt="" width="75" height="75" srcset="https://bluediamondconsultants.com/wp-content/uploads/stellar_circle.png.webp 224w,https://bluediamondconsultants.com/wp-content/uploads/stellar_circle-150x150.png 150w" sizes="(max-width: 75px) 100vw, 75px" /></noscript></p>
+<p>“They treat clients like family with unwavering support!!! Vast knowledge across many facets of business and the trades. Quick to respond to urgent matters. Introduction to preferred vendors and industry professionals. Weekly 1 on 1 meetings, and weekly open discussions with other industry professionals.”</p>
+<p>Stellar Plumbing</p>
+											</div>
+										</div><div class="review-item glide__slide first-p-mt-0 glide__slide--clone" style="width: 633.333px; margin-left: 5px; margin-right: 5px;">
+											<div class="reviews-item-inner max-w-[320px] w-full bg-white border border-solid border-black py-12 px-6 mob:p-6 rounded-brand mob:mx-auto aos-init" data-aos="flip-up">
+												<p><img decoding="async" class="wp-image-1989 aligncenter" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20142%2075'%3E%3C/svg%3E" alt="Jersey Boys" width="142" height="75" data-lazy-srcset="https://bluediamondconsultants.com/wp-content/uploads/Jersey-Boys-logo.png 309w,https://bluediamondconsultants.com/wp-content/uploads/Jersey-Boys-logo-300x158.png.webp 300w" data-lazy-sizes="(max-width: 142px) 100vw, 142px" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/Jersey-Boys-logo.png"><noscript><img decoding="async" class="wp-image-1989 aligncenter" src="https://bluediamondconsultants.com/wp-content/uploads/Jersey-Boys-logo.png" alt="Jersey Boys" width="142" height="75" srcset="https://bluediamondconsultants.com/wp-content/uploads/Jersey-Boys-logo.png 309w,https://bluediamondconsultants.com/wp-content/uploads/Jersey-Boys-logo-300x158.png.webp 300w" sizes="(max-width: 142px) 100vw, 142px" /></noscript></p>
+<p>“Blue Diamond Consultants have been an invaluable partner to our business. Their greatest impact has been educating us in financial literacy, which has transformed the way we operate. They’re always available whenever we need support and consistently hold us accountable. Their guidance pushes us to take action in the areas of our business that need it most. The training and coaching they provide not only keep us sharp but also elevate our entire team’s performance.”</p>
+<p>Jersey Boys Plumbing</p>
+											</div>
+										</div><div class="review-item glide__slide first-p-mt-0 glide__slide--clone" style="width: 633.333px; margin-left: 5px;">
+											<div class="reviews-item-inner max-w-[320px] w-full bg-white border border-solid border-black py-12 px-6 mob:p-6 rounded-brand mob:mx-auto aos-init" data-aos="flip-up">
+												<p><img decoding="async" class="wp-image-2074 aligncenter" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20109%2075'%3E%3C/svg%3E" alt="All American" width="109" height="75" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/download-5-e1768938532760.webp"><noscript><img decoding="async" class="wp-image-2074 aligncenter" src="https://bluediamondconsultants.com/wp-content/uploads/download-5-e1768938532760.webp" alt="All American" width="109" height="75" /></noscript></p>
+<p>“The Blue Diamond Consultants Group keeps us accountable and focused on meaningful action, helping us push past daily fires to truly move the needle. They’ve guided us in driving growth, upgrading processes, and staying committed to what matters most. When challenges arise, they provide steady support and follow-through. Most recently, their biggest impact has been in helping us hire, train, and lead two outstanding managers.”</p>
+<p>All American Home Service</p>
+											</div>
+										</div></ul>
+						</div>
+						<div class="glide__arrows" data-glide-el="controls">
+							<button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img class="w-[25px] entered lazyloaded" id="api-go-backward" src="https://bluediamondconsultants.com/wp-content/uploads/icon_arrow-left.svg" alt="left arrow" data-lazy-src="/wp-content/uploads/icon_arrow-left.svg" data-ll-status="loaded" width="300" height="150"><noscript><img class="w-[25px]" id="api-go-backward" src="/wp-content/uploads/icon_arrow-left.svg" alt="left arrow" /></noscript></button>
+							<button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img class="w-[25px] entered lazyloaded" id="api-go-forward" src="https://bluediamondconsultants.com/wp-content/uploads/icon_arrow-right.svg" alt="right arrow" data-lazy-src="/wp-content/uploads/icon_arrow-right.svg" data-ll-status="loaded" width="300" height="150"><noscript><img class="w-[25px]" id="api-go-forward" src="/wp-content/uploads/icon_arrow-right.svg" alt="right arrow" /></noscript></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+    <div class="yellow-border"></div>
+    <div class="home-cta bg-black">
+        <div class="home-cta-inner flex mob:flex-wrap">
+            <div class="home-cta-left laptop:max-w-[55%[ w-full mob:py-32" style="background: url(https://bluediamondconsultants.com/wp-content/uploads/Copy-of-DSC00015.webp) center / cover;"></div>
+            <div class="home-cta-right w-full py-36 mob:p-5 mob:pb-9">
+                <div class="home-cta-right-inner max-w-550 w-full laptop:-ml-5">
+                    <h2 style="text-align: center;">A 30-Minute Call That Changes Everything</h2>
+<p>In one focused conversation, we’ll zero in on the biggest issues holding your business back, whether it’s unclear financials, low margins, or an operational bottleneck you can’t shake. You’ll walk away with fresh energy and a clear next step you can act on immediately.</p>
+<p>Quick to book, zero risk, and packed with value you’ll feel as soon as you show up.</p>
+                    <div class="text-center">
+                        <a href="https://bluediamondconsultants.com/#contact" class="se-widget-button requestBtn btn  yellowBtn">Get Your Free Session</a>                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home-services mt-24 mb-20 mob:my-7">
+        <div class="home-services-inner max-w-1250 w-full mx-auto px-3 mob:px-5 flex mob:flex-wrap justify-between items-center">
+            <div class="home-services-left max-w-450 w-full laptop:pr-4">
+                <h2>For Every Corner of the Home Service Industry</h2>
+<p>We’ve worked with HVAC owners stuck in the summer spike, plumbers with cash flow strangled by one-and-done tickets, electricians missing out on big add-ons like home automation, and so much more. If you’re in the trades and ready for a business that runs smoother, sells better, and keeps more of what it earns, we’re in your corner.</p>
+                <a href="https://bluediamondconsultants.com/#contact" class="se-widget-button requestBtn btn ghostBtn yellowBtn">Get Your Free Session</a>            </div>
+            <div class="home-services-right max-w-700 w-full laptop:pl-10 flex flex-wrap justify-between gap-y-7">
+                                        <a class="home-services-right-item max-w-[315px] w-full block !no-underline text-white pt-20 pb-24 mob:py-20 gold-border  " href="https://bluediamondconsultants.com/home-service-business-coaching/plumbing/" style="background: url(https://bluediamondconsultants.com/wp-content/uploads/iStock-1440019701.webp) center / cover;">
+                            <img class="service-icon max-w-50 mx-auto entered error" src="https://bluediamondconsultants.com/wp-content/uploads/icon-service-1@2x.webp" alt="icon" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/icon-service-1@2x.webp" data-ll-status="error"><noscript><img class="service-icon max-w-50 mx-auto" src="https://bluediamondconsultants.com/wp-content/uploads/icon-service-1@2x.webp" alt="icon"></noscript>
+                            <img class="service-icon-hover max-w-50 mx-auto entered error" src="https://bluediamondconsultants.com/wp-content/uploads/icon-service-1-hvr@2x.webp" alt="icon" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/icon-service-1-hvr@2x.webp" data-ll-status="error"><noscript><img class="service-icon-hover max-w-50 mx-auto  " src="https://bluediamondconsultants.com/wp-content/uploads/icon-service-1-hvr@2x.webp" alt="icon"></noscript>                            
+                            <h3 style="text-align: center;">PLUMBING</h3>
+                        </a>
+                                            <a class="home-services-right-item max-w-[315px] w-full block !no-underline text-white pt-20 pb-24 mob:py-20 gold-border  " href="https://bluediamondconsultants.com/home-service-business-coaching/hvac/" style="background: url(https://bluediamondconsultants.com/wp-content/uploads/iStock-2206342744-1-e1755791722420.webp) center / cover;">
+                            <img class="service-icon max-w-50 mx-auto entered error" src="https://bluediamondconsultants.com/wp-content/uploads/icon-service-2@2x.webp" alt="icon" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/icon-service-2@2x.webp" data-ll-status="error"><noscript><img class="service-icon max-w-50 mx-auto" src="https://bluediamondconsultants.com/wp-content/uploads/icon-service-2@2x.webp" alt="icon"></noscript>
+                            <img class="service-icon-hover max-w-50 mx-auto entered error" src="https://bluediamondconsultants.com/wp-content/uploads/icon-service-2-hvr@2x.webp" alt="icon" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/icon-service-2-hvr@2x.webp" data-ll-status="error"><noscript><img class="service-icon-hover max-w-50 mx-auto  " src="https://bluediamondconsultants.com/wp-content/uploads/icon-service-2-hvr@2x.webp" alt="icon"></noscript>                            
+                            <h3 style="text-align: center;">HVAC</h3>
+                        </a>
+                                            <a class="home-services-right-item max-w-[315px] w-full block !no-underline text-white pt-20 pb-24 mob:py-20 gold-border  " href="https://bluediamondconsultants.com/home-service-business-coaching/electrical/" style="background: url(https://bluediamondconsultants.com/wp-content/uploads/iStock-2231213472-2.webp) center / cover;">
+                            <img class="service-icon max-w-50 mx-auto entered error" src="https://bluediamondconsultants.com/wp-content/uploads/icon-service-3@2x.webp" alt="icon" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/icon-service-3@2x.webp" data-ll-status="error"><noscript><img class="service-icon max-w-50 mx-auto" src="https://bluediamondconsultants.com/wp-content/uploads/icon-service-3@2x.webp" alt="icon"></noscript>
+                            <img class="service-icon-hover max-w-50 mx-auto entered error" src="https://bluediamondconsultants.com/wp-content/uploads/icon-service-3-hvr@2x.webp" alt="icon" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/icon-service-3-hvr@2x.webp" data-ll-status="error"><noscript><img class="service-icon-hover max-w-50 mx-auto  " src="https://bluediamondconsultants.com/wp-content/uploads/icon-service-3-hvr@2x.webp" alt="icon"></noscript>                            
+                            <h3 style="text-align: center;">ELECTRICAL</h3>
+                        </a>
+                                            <a class="home-services-right-item max-w-[315px] w-full block !no-underline text-white pt-20 pb-24 mob:py-20 gold-border  " href="https://bluediamondconsultants.com/home-service-business-coaching/other-trades-business-coach/" style="background: url(https://bluediamondconsultants.com/wp-content/uploads/iStock-979361764.webp) center / cover;">
+                            <img class="service-icon max-w-50 mx-auto entered lazyloaded" src="https://bluediamondconsultants.com/wp-content/uploads/service5.svg" alt="icon" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/service5.svg" data-ll-status="loaded" width="300" height="150"><noscript><img class="service-icon max-w-50 mx-auto" src="https://bluediamondconsultants.com/wp-content/uploads/service5.svg" alt="icon"></noscript>
+                            <img class="service-icon-hover max-w-50 mx-auto entered lazyloaded" src="https://bluediamondconsultants.com/wp-content/uploads/service5_hvr.svg" alt="icon" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/service5_hvr.svg" data-ll-status="loaded" width="300" height="150"><noscript><img class="service-icon-hover max-w-50 mx-auto  " src="https://bluediamondconsultants.com/wp-content/uploads/service5_hvr.svg" alt="icon"></noscript>                            
+                            <h3 style="text-align: center;">OTHER TRADES</h3>
+                        </a>
+                                </div>
+        </div>
+    </div>
+    <div class="home-about my-20 mob:my-7">
+        <div class="home-about-inner max-w-1250 w-full mx-auto flex mob:flex-wrap justify-between items-center laptop:px-5">
+            <div class="home-about-left max-w-600 w-full image-has-border mobile-no-border">
+                <p data-rocket-lazy-bg-20483c6c-0de8-4a7f-a82e-5bf33d8cfde5="excluded"><img decoding="async" class="alignnone wp-image-2048 size-full entered error" src="https://bluediamondconsultants.com/wp-content/uploads/Copy-of-DSC00071.webp" alt="" width="900" height="600" data-lazy-srcset="https://bluediamondconsultants.com/wp-content/uploads/Copy-of-DSC00071.webp 900w, https://bluediamondconsultants.com/wp-content/uploads/Copy-of-DSC00071-300x200.webp 300w, https://bluediamondconsultants.com/wp-content/uploads/Copy-of-DSC00071-768x512.webp 768w" data-lazy-sizes="(max-width: 900px) 100vw, 900px" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/Copy-of-DSC00071.webp" data-ll-status="error"><noscript><img decoding="async" class="alignnone wp-image-2048 size-full" src="https://bluediamondconsultants.com/wp-content/uploads/Copy-of-DSC00071.webp" alt="" width="900" height="600" srcset="https://bluediamondconsultants.com/wp-content/uploads/Copy-of-DSC00071.webp 900w, https://bluediamondconsultants.com/wp-content/uploads/Copy-of-DSC00071-300x200.webp 300w, https://bluediamondconsultants.com/wp-content/uploads/Copy-of-DSC00071-768x512.webp 768w" sizes="(max-width: 900px) 100vw, 900px" /></noscript></p>
+            </div>
+            <div class="home-about-right max-w-550 w-full mob:px-5">
+                <h2>Three Coaches. Your Personal Braintrust.</h2>
+<p>With over 90 years of combined experience, we’ve lived the life of a home service business owner several times over. We’ve made the hires, missed the hires, fought through slow seasons, scaled through record ones, and sold at the right time—and we’ve made the mistakes you can now skip, learning from our experience instead of your own trial and error.</p>
+<p>Individually, Mike, Julie, and Jim each bring deep understanding—sales and marketing that keep leads and margins strong, operations that run like seamless clockwork, and financials taken from guesswork to full command. But together, their shared knowledge creates a force few businesses ever get to tap into: A level of insight, strategy, and momentum that makes you truly unstoppable.</p>
+<p>Together, we work with you every single week to make your business stronger, more profitable, and easier to run.</p>
+<p><a class="btn ghostBtn" href="https://bluediamondconsultants.com/about/meet-the-team/">Meet The Team</a></p>
+            </div>
+        </div>
+    </div>
+        <div class="home-pre-footer pre-footer-container">
+        <div class="pre-footer bg-grey py-[1px]">
+			<div class="pre-footer-event">
+					</div>
+				<div class="pre-footer-resources">
+			<div class="resources-section mt-14 mb-16 mob:my-7">
+	<div class="resources-inner max-w-1100 w-full mx-auto px-4 mob:px-5">
+		<div class="resources-top mb-10 mob:mb-5">
+			<h2 style="text-align: center;">Resources for Your Business</h2>
+		</div>
+		<div class="resources-bottom">
+			<div class="resources-bottom-inner flex mob:flex-wrap justify-between desktopOnly">
+										<div class="resource-item max-w-350 w-full bg-white border border-solid border-[#c5c5c5] rounded-brand">
+							<div class="resources-item-image py-24" style="background: url(https://bluediamondconsultants.com/wp-content/uploads/iStock-2206342744-1-e1755791722420.webp) center / cover;"></div>
+							<div class="resources-item-content p-7 mob:p-5">
+								<h5>7 Challenges of Owning an HVAC Business (And How to Overcome Them)</h5>
+								<a href="https://bluediamondconsultants.com/blog/7-challenges-of-owning-an-hvac-business-and-how-to-overcome-them/" class="btn ghostBtn">Read Now</a>
+							</div>
+						</div>
+											<div class="resource-item max-w-350 w-full bg-white border border-solid border-[#c5c5c5] rounded-brand">
+							<div class="resources-item-image py-24" style="background: url(https://bluediamondconsultants.com/wp-content/uploads/iStock-1440019701.webp) center / cover;"></div>
+							<div class="resources-item-content p-7 mob:p-5">
+								<h5>The Stages of a Business Lifecycle: Home Service Business Success</h5>
+								<a href="https://bluediamondconsultants.com/blog/the-stages-of-a-business-lifecycle-home-service-business-success/" class="btn ghostBtn">Read Now</a>
+							</div>
+						</div>
+											<div class="resource-item max-w-350 w-full bg-white border border-solid border-[#c5c5c5] rounded-brand">
+							<div class="resources-item-image py-24" style="background: url(https://bluediamondconsultants.com/wp-content/uploads/1183087605-Edited2.webp) center / cover;"></div>
+							<div class="resources-item-content p-7 mob:p-5">
+								<h5>How Much Does Service Excellence Matter for Home Service Providers?</h5>
+								<a href="https://bluediamondconsultants.com/blog/how-much-does-service-excellence-matter-for-home-service-providers/" class="btn ghostBtn">Read Now</a>
+							</div>
+						</div>
+								</div>
+			<div class="resources-bottom-inner mobileOnly ">
+				<div class="reviews glide glide1 glide--ltr glide--carousel glide--swipeable">
+					<div class="glide__track" data-glide-el="track">
+						<ul class="glide__slides" style="transition: transform cubic-bezier(0.165, 0.84, 0.44, 1); width: 13510px; transform: translate3d(-3860px, 0px, 0px);">
+																<div class="resource-item-container glide__slide glide__slide--clone" style="width: 1920px; margin-right: 5px;">
+										<div class="resource-item max-w-350 w-full bg-white border border-solid border-[#c5c5c5] rounded-brand">
+											<div class="resources-item-image py-24" style="background: url(https://bluediamondconsultants.com/wp-content/uploads/iStock-1440019701.webp) center / cover;"></div>
+											<div class="resources-item-content p-7 mob:p-5">
+												<h5>The Stages of a Business Lifecycle: Home Service Business Success</h5>
+												<a href="https://bluediamondconsultants.com/blog/the-stages-of-a-business-lifecycle-home-service-business-success/" class="btn ghostBtn">Read Now</a>
+											</div>
+										</div>
+									</div><div class="resource-item-container glide__slide glide__slide--clone" style="width: 1920px; margin-left: 5px; margin-right: 5px;">
+										<div class="resource-item max-w-350 w-full bg-white border border-solid border-[#c5c5c5] rounded-brand">
+											<div class="resources-item-image py-24" style="background: url(https://bluediamondconsultants.com/wp-content/uploads/1183087605-Edited2.webp) center / cover;"></div>
+											<div class="resources-item-content p-7 mob:p-5">
+												<h5>How Much Does Service Excellence Matter for Home Service Providers?</h5>
+												<a href="https://bluediamondconsultants.com/blog/how-much-does-service-excellence-matter-for-home-service-providers/" class="btn ghostBtn">Read Now</a>
+											</div>
+										</div>
+									</div><div class="resource-item-container glide__slide glide__slide--active" style="width: 1920px; margin-left: 5px; margin-right: 5px;">
+										<div class="resource-item max-w-350 w-full bg-white border border-solid border-[#c5c5c5] rounded-brand">
+											<div class="resources-item-image py-24" style="background: url(https://bluediamondconsultants.com/wp-content/uploads/iStock-2206342744-1-e1755791722420.webp) center / cover;"></div>
+											<div class="resources-item-content p-7 mob:p-5">
+												<h5>7 Challenges of Owning an HVAC Business (And How to Overcome Them)</h5>
+												<a href="https://bluediamondconsultants.com/blog/7-challenges-of-owning-an-hvac-business-and-how-to-overcome-them/" class="btn ghostBtn">Read Now</a>
+											</div>
+										</div>
+									</div>
+																	<div class="resource-item-container glide__slide" style="width: 1920px; margin-left: 5px; margin-right: 5px;">
+										<div class="resource-item max-w-350 w-full bg-white border border-solid border-[#c5c5c5] rounded-brand">
+											<div class="resources-item-image py-24" style="background: url(https://bluediamondconsultants.com/wp-content/uploads/iStock-1440019701.webp) center / cover;"></div>
+											<div class="resources-item-content p-7 mob:p-5">
+												<h5>The Stages of a Business Lifecycle: Home Service Business Success</h5>
+												<a href="https://bluediamondconsultants.com/blog/the-stages-of-a-business-lifecycle-home-service-business-success/" class="btn ghostBtn">Read Now</a>
+											</div>
+										</div>
+									</div>
+																	<div class="resource-item-container glide__slide" style="width: 1920px; margin-left: 5px; margin-right: 5px;">
+										<div class="resource-item max-w-350 w-full bg-white border border-solid border-[#c5c5c5] rounded-brand">
+											<div class="resources-item-image py-24" style="background: url(https://bluediamondconsultants.com/wp-content/uploads/1183087605-Edited2.webp) center / cover;"></div>
+											<div class="resources-item-content p-7 mob:p-5">
+												<h5>How Much Does Service Excellence Matter for Home Service Providers?</h5>
+												<a href="https://bluediamondconsultants.com/blog/how-much-does-service-excellence-matter-for-home-service-providers/" class="btn ghostBtn">Read Now</a>
+											</div>
+										</div>
+									</div>
+														<div class="resource-item-container glide__slide glide__slide--clone" style="width: 1920px; margin-left: 5px; margin-right: 5px;">
+										<div class="resource-item max-w-350 w-full bg-white border border-solid border-[#c5c5c5] rounded-brand">
+											<div class="resources-item-image py-24" style="background: url(https://bluediamondconsultants.com/wp-content/uploads/iStock-2206342744-1-e1755791722420.webp) center / cover;"></div>
+											<div class="resources-item-content p-7 mob:p-5">
+												<h5>7 Challenges of Owning an HVAC Business (And How to Overcome Them)</h5>
+												<a href="https://bluediamondconsultants.com/blog/7-challenges-of-owning-an-hvac-business-and-how-to-overcome-them/" class="btn ghostBtn">Read Now</a>
+											</div>
+										</div>
+									</div><div class="resource-item-container glide__slide glide__slide--clone" style="width: 1920px; margin-left: 5px;">
+										<div class="resource-item max-w-350 w-full bg-white border border-solid border-[#c5c5c5] rounded-brand">
+											<div class="resources-item-image py-24" style="background: url(https://bluediamondconsultants.com/wp-content/uploads/iStock-1440019701.webp) center / cover;"></div>
+											<div class="resources-item-content p-7 mob:p-5">
+												<h5>The Stages of a Business Lifecycle: Home Service Business Success</h5>
+												<a href="https://bluediamondconsultants.com/blog/the-stages-of-a-business-lifecycle-home-service-business-success/" class="btn ghostBtn">Read Now</a>
+											</div>
+										</div>
+									</div></ul>
+					</div>
+					<div class="glide__arrows yellow-arrows" data-glide-el="controls">
+						<button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img class="w-[25px] entered lazyloaded" id="api-go-backward" src="https://bluediamondconsultants.com/wp-content/uploads/icon_arrow-left.svg" alt="left arrow" data-lazy-src="/wp-content/uploads/icon_arrow-left.svg" data-ll-status="loaded" width="300" height="150"><noscript><img class="w-[25px]" id="api-go-backward" src="/wp-content/uploads/icon_arrow-left.svg" alt="left arrow" /></noscript></button>
+						<button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img class="w-[25px] entered lazyloaded" id="api-go-forward" src="https://bluediamondconsultants.com/wp-content/uploads/icon_arrow-right.svg" alt="right arrow" data-lazy-src="/wp-content/uploads/icon_arrow-right.svg" data-ll-status="loaded" width="300" height="150"><noscript><img class="w-[25px]" id="api-go-forward" src="/wp-content/uploads/icon_arrow-right.svg" alt="right arrow" /></noscript></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>		</div>
+				<div class="pre-footer-contact">
+			<div class="contact-section mt-16 mb-11 mob:mt-6 mob:mb-5">
+	<div class="blue-border mobileOnly"></div>
+	<div class="contact-inner max-w-1250 w-full mx-auto bg-black px-5 py-12 mob:py-6 aos-init" data-aos="fade-up">
+		<div class="contact-content max-w-[710px] w-full mx-auto text-center">
+			<h2 id="contact" style="text-align: center;">Get Your <span id="bluespan">Free</span> Session</h2>
+<p style="text-align: center;"></p><div class="frm_forms  with_frm_style frm_style_formidable-style" id="frm_form_7_container">
+<form enctype="multipart/form-data" method="post" class="frm-show-form  frm_pro_form " id="form_contact2" style="overflow-x: visible;">
+<div class="frm_form_fields ">
+<fieldset>
+<legend class="frm_screen_reader">Footer CTA Contact</legend>
+
+<div class="frm_fields_container">
+
+
+
+
+
+<div id="frm_field_46_container" class="frm_form_field form-field  frm_required_field frm_none_container nameField frm6 frm_first">
+    <label for="field_hoo1i2" id="field_hoo1i2_label" class="frm_primary_label">Company Name
+        <span class="frm_required">*</span>
+    </label>
+    <input type="text" id="field_hoo1i2" name="item_meta[46]" value="" placeholder="Company Name" data-reqmsg="Please enter your Company Name." aria-required="true" data-invmsg="Text is invalid" aria-invalid="false">
+    
+    
+</div>
+<div id="frm_field_51_container" class="frm_form_field form-field  frm_required_field frm_top_container frm6">
+	<label for="field_hlhmr" id="field_hlhmr_label" class="frm_primary_label">What is your company size?
+		<span class="frm_required" aria-hidden="true">*</span>
+	</label>
+			<select name="item_meta[51]" id="field_hlhmr" data-placeholder="Company Size" placeholder="Company Size" data-reqmsg="What is your company size? cannot be blank." aria-required="true" data-invmsg="What is your company size? is invalid" aria-invalid="false" data-rocket-lazy-bg-d96ff9de-4a36-4f64-a6b4-bcf6c79fa1f2="loaded">
+		<option class="frm-select-placeholder" value="" data-placeholder="true">Company Size</option><option value="Less than 5 employees">Less than 5 employees</option><option value="5-10 employees">5-10 employees</option><option value="10+ employees">10+ employees</option>	</select>
+	
+	
+	
+</div>
+<div id="frm_field_52_container" class="frm_form_field form-field  frm_required_field frm_top_container">
+	<label for="field_25jbb" id="field_25jbb_label" class="frm_primary_label">Your Name
+		<span class="frm_required" aria-hidden="true">*</span>
+	</label>
+	<input type="text" id="field_25jbb" name="item_meta[52]" value="" placeholder="Your Name" data-reqmsg="Please enter your name." aria-required="true" data-invmsg="Your Name is invalid" aria-invalid="false">
+	
+	
+</div>
+<div id="frm_field_47_container" class="frm_form_field form-field  frm_required_field frm_none_container emailField frm6 frm_first">
+    <label for="field_objra2" id="field_objra2_label" class="frm_primary_label">Your Email
+        <span class="frm_required">*</span>
+    </label>
+    <input type="email" id="field_objra2" name="item_meta[47]" value="" placeholder="Your Email" data-reqmsg="Please enter your Email." aria-required="true" data-invmsg="Please enter a valid Email." aria-invalid="false">
+    
+    
+</div>
+<div id="frm_field_48_container" class="frm_form_field form-field  frm_required_field frm_none_container phoneField frm6">
+    <label for="field_ijom42" id="field_ijom42_label" class="frm_primary_label">Your Phone
+        <span class="frm_required">*</span>
+    </label>
+    <input type="tel" id="field_ijom42" name="item_meta[48]" value="" placeholder="(888) 123-4567" data-reqmsg="Please enter your Phone Number." aria-required="true" data-invmsg="Please enter a valid Phone Number." aria-invalid="false" pattern="((\+\d{1,3}(-|.| )?\(?\d\)?(-| |.)?\d{1,5})|(\(?\d{2,6}\)?))(-|.| )?(\d{3,4})(-|.| )?(\d{4})(( x| ext)\d{1,5}){0,1}$">
+    
+    
+</div>
+<div id="frm_field_49_container" class="frm_form_field form-field  frm_none_container">
+    <label for="field_cpxu82" id="field_cpxu82_label" class="frm_primary_label">What’s the biggest challenge you’re facing right now in your business?
+        <span class="frm_required"></span>
+    </label>
+    <textarea name="item_meta[49]" id="field_cpxu82" rows="5" placeholder="My biggest challenge is…" data-invmsg="What’s the biggest challenge you’re facing right now in your business? is invalid" aria-invalid="false"></textarea>
+    
+    
+</div>
+<div id="frm_field_50_container" class="frm_form_field form-field ">
+	<div class="frm_submit">
+
+<button class="" type="submit" formnovalidate="formnovalidate">Submit</button>
+
+</div>
+</div>
+	
+			<div id="frm_field_54_container">
+			<label for="field_x6c3z" style="display:none;">
+				If you are human, leave this field blank.			</label>
+			<input id="field_x6c3z" type="text" class="frm_form_field form-field frm_verify" name="item_meta[54]" value="" style="display:none;">
+		</div>
+		</div>
+</fieldset>
+</div>
+<script type="text/javascript">var input = document.createElement('input');
+    input.setAttribute('type', 'hidden');
+    input.setAttribute('name', 'ct_checkjs_frm');
+    input.setAttribute('value', '03339d9389f8a283a8d12c295d128fa274139c16ed2931b0e7e6852d18a2ed60');
+    for (i = 0; i < document.forms.length; i++) {
+        if (typeof document.forms[i].id == 'string'){
+			if(document.forms[i].id.search('form_contact2') != -1) {
+            document.forms[i].appendChild(input);
+			}
+        }
+    }</script>
+
+</form>
+</div>
+<p></p>
+		</div>
+	</div>
+</div>		</div>
+	</div>
+    </div>
+</div>
+
+</main>
+
+
+</div> <!-- #content -->
+
+
+<div data-wpr-lazyrender="1" class="yellow-border alt tall mb-2"></div>
+<footer data-wpr-lazyrender="1" class="bg-black pt-10 mob:pt-10 text-white">
+    <div class="footer-top max-w-1250 mx-auto px-4 flex mob:justify-center mob:flex-wrap justify-between mb-11 mob:mb-5">
+		<div class="footer-col laptop:max-w-400 w-full">
+			<div class="footer-col-inner mob:max-w-400 w-full mx-auto">
+				<a class="footer-logo mob:block mob:mx-auto" href="https://bluediamondconsultants.com/"><img class="footer-logo-img w-full" src="https://bluediamondconsultants.com/wp-content/uploads/blue-diamond-consultants-logo.webp" alt="Blue Diamond Consultants"></a>
+			</div>
+		</div>
+		<div class="footer-col laptop:max-w-[320px] w-full">
+			<div class="footer-col-inner max-w-[320px] w-full mx-auto text-center">
+                <h5>Go Beyond Coaching, Go Diamond</h5>
+				<div class="footer-book mb-4">
+					<a href="https://bluediamondconsultants.com/#contact" class="se-widget-button requestBtn btn  yellowBtn">Get Your Free Session</a>				</div>
+				<div class="footer-buttons">
+					<p><a class="btn ghostBtn" href="https://bluediamondconsultants.com/contact">Contact Blue Diamond</a></p>
+				</div>
+            </div>
+        </div>
+		<div class="footer-col mob:w-full">
+			<div class="footer-col-inner max-w-[300px] w-full mx-auto">
+				<div class="footer-menu">
+					<div class="menu-footer-menu-container"><ul id="menu-footer-menu" class="menu"><li id="menu-item-1457" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1457"><a href="https://bluediamondconsultants.com/about/">Who We Are</a></li>
+<li id="menu-item-1458" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1458"><a href="https://bluediamondconsultants.com/home-service-business-coaching/">Our Coaching</a></li>
+<li id="menu-item-1460" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1460"><a href="https://bluediamondconsultants.com/blogs/">Expert Tips</a></li>
+<li id="menu-item-1459" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1459"><a href="https://bluediamondconsultants.com/events/">Events</a></li>
+</ul></div>				</div>
+                <div class="footer-social social-left">
+					<div class="social-icons-container"><a class="social-media-account" target="_blank" href="https://www.facebook.com/BlueDiamondConsultants"><img class="hover-icon entered lazyloaded" src="https://bluediamondconsultants.com/wp-content/uploads/social-fb-2.svg" alt="Facebook" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/social-fb-2.svg" data-ll-status="loaded" width="300" height="150"><noscript><img class="hover-icon" src="https://bluediamondconsultants.com/wp-content/uploads/social-fb-2.svg" alt="Facebook" /></noscript><img class="passive-icon entered lazyloaded" src="https://bluediamondconsultants.com/wp-content/uploads/fb.svg" alt="Facebook" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/fb.svg" data-ll-status="loaded" width="300" height="150"><noscript><img class="passive-icon" src="https://bluediamondconsultants.com/wp-content/uploads/fb.svg" alt="Facebook" /></noscript></a><a class="social-media-account" target="_blank" href="https://www.linkedin.com/company/blue-diamond-consultants/"><img class="hover-icon entered lazyloaded" src="https://bluediamondconsultants.com/wp-content/uploads/social-in-2.svg" alt="LinkedIn" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/social-in-2.svg" data-ll-status="loaded" width="300" height="150"><noscript><img class="hover-icon" src="https://bluediamondconsultants.com/wp-content/uploads/social-in-2.svg" alt="LinkedIn" /></noscript><img class="passive-icon entered lazyloaded" src="https://bluediamondconsultants.com/wp-content/uploads/in.svg" alt="LinkedIn" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/in.svg" data-ll-status="loaded" width="300" height="150"><noscript><img class="passive-icon" src="https://bluediamondconsultants.com/wp-content/uploads/in.svg" alt="LinkedIn" /></noscript></a><a class="social-media-account" target="_blank" href="https://share.google/CbTm3LyznTK2Tta8y"><img class="hover-icon entered lazyloaded" src="https://bluediamondconsultants.com/wp-content/uploads/social-google-2.svg" alt="Google" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/social-google-2.svg" data-ll-status="loaded" width="300" height="150"><noscript><img class="hover-icon" src="https://bluediamondconsultants.com/wp-content/uploads/social-google-2.svg" alt="Google" /></noscript><img class="passive-icon entered lazyloaded" src="https://bluediamondconsultants.com/wp-content/uploads/google.svg" alt="Google" data-lazy-src="https://bluediamondconsultants.com/wp-content/uploads/google.svg" data-ll-status="loaded" width="300" height="150"><noscript><img class="passive-icon" src="https://bluediamondconsultants.com/wp-content/uploads/google.svg" alt="Google" /></noscript></a></div>                </div>
+			</div>
+		</div>
+    </div>
+	<div class="bottom-bar py-4 mob:text-center border-t-black border-t border-t-solid">
+		<div class="bottom-bar-inner mx-auto mob:px-4 flex flex-wrap justify-center gap-7 mob:gap-1 items-center text-12">
+			<div class="bottom-bar-item mob:w-full">
+				©2026 Blue Diamond Consultants. All Rights Reserved.
+			</div>
+						<div class="bottom-bar-item mob:w-full">
+				<a class="text-black font-normal terms-link" href="https://bluediamondconsultants.com/terms-and-conditions/">Terms and Conditions</a> <span>|</span> <a class="text-black font-normal privacy-link" href="https://bluediamondconsultants.com/privacy-policy/">Privacy Policy</a>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+</div> <!-- #page -->
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/blue-diamond/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="text/javascript" id="rocket-browser-checker-js-after">
+/* <![CDATA[ */
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+//# sourceURL=rocket-browser-checker-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-extra">
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"/(?:.+/)?feed(?:/(?:.+/?)?)?$|/(?:.+/)?embed/|/(index.php/)?(.*)wp-json(/.*|$)|/refer/|/go/|/recommend/|/recommends/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https://bluediamondconsultants.com","onHoverDelay":"100","rateThrottle":"3"};
+//# sourceURL=rocket-preload-links-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket-preload-links-js-after">
+/* <![CDATA[ */
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+
+//# sourceURL=rocket-preload-links-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket_lazyload_css-js-extra">
+/* <![CDATA[ */
+var rocket_lazyload_css_data = {"threshold":"300"};
+//# sourceURL=rocket_lazyload_css-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" id="rocket_lazyload_css-js-after">
+/* <![CDATA[ */
+!function o(n,c,a){function u(t,e){if(!c[t]){if(!n[t]){var r="function"==typeof require&&require;if(!e&&r)return r(t,!0);if(s)return s(t,!0);throw(e=new Error("Cannot find module '"+t+"'")).code="MODULE_NOT_FOUND",e}r=c[t]={exports:{}},n[t][0].call(r.exports,function(e){return u(n[t][1][e]||e)},r,r.exports,o,n,c,a)}return c[t].exports}for(var s="function"==typeof require&&require,e=0;e<a.length;e++)u(a[e]);return u}({1:[function(e,t,r){"use strict";{const c="undefined"==typeof rocket_pairs?[]:rocket_pairs,a=(("undefined"==typeof rocket_excluded_pairs?[]:rocket_excluded_pairs).map(t=>{var e=t.selector;document.querySelectorAll(e).forEach(e=>{e.setAttribute("data-rocket-lazy-bg-"+t.hash,"excluded")})}),document.querySelector("#wpr-lazyload-bg-container"));var o=rocket_lazyload_css_data.threshold||300;const u=new IntersectionObserver(e=>{e.forEach(t=>{t.isIntersecting&&c.filter(e=>t.target.matches(e.selector)).map(t=>{var e;t&&((e=document.createElement("style")).textContent=t.style,a.insertAdjacentElement("afterend",e),t.elements.forEach(e=>{u.unobserve(e),e.setAttribute("data-rocket-lazy-bg-"+t.hash,"loaded")}))})})},{rootMargin:o+"px"});function n(){0<(0<arguments.length&&void 0!==arguments[0]?arguments[0]:[]).length&&c.forEach(t=>{try{document.querySelectorAll(t.selector).forEach(e=>{"loaded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&"excluded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&(u.observe(e),(t.elements||=[]).push(e))})}catch(e){console.error(e)}})}n(),function(){const r=window.MutationObserver;return function(e,t){if(e&&1===e.nodeType)return(t=new r(t)).observe(e,{attributes:!0,childList:!0,subtree:!0}),t}}()(document.querySelector("body"),n)}},{}]},{},[1]);
+//# sourceURL=rocket_lazyload_css-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" id="formidable-js-extra">
+/* <![CDATA[ */
+var frm_js = {"ajax_url":"https://bluediamondconsultants.com/wp-admin/admin-ajax.php","images_url":"https://bluediamondconsultants.com/wp-content/plugins/formidable/images","loading":"Loading\u2026","remove":"Remove","offset":"4","nonce":"15d58611d7","id":"ID","no_results":"No results match","file_spam":"That file looks like Spam.","calc_error":"There is an error in the calculation in the field with key","empty_fields":"Please complete the preceding required fields before uploading a file.","focus_first_error":"1","include_alert_role":"1","include_resend_email":""};
+var frm_password_checks = {"eight-char":{"label":"Eight characters minimum","regex":"/^.{8,}$/","message":"Passwords require at least 8 characters"},"lowercase":{"label":"One lowercase letter","regex":"#[a-z]+#","message":"Passwords must include at least one lowercase letter"},"uppercase":{"label":"One uppercase letter","regex":"#[A-Z]+#","message":"Passwords must include at least one uppercase letter"},"number":{"label":"One number","regex":"#[0-9]+#","message":"Passwords must include at least one number"},"special-char":{"label":"One special character","regex":"/(?=.*[^a-zA-Z0-9])/","message":"Password is invalid"}};
+var frmCheckboxI18n = {"errorMsg":{"min_selections":"This field requires a minimum of %1$d selected options but only %2$d were submitted."}};
+//# sourceURL=formidable-js-extra
+/* ]]> */
+</script>
+
+
+
+			
+			<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async="" src="https://bluediamondconsultants.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script>
+
+
+</body></html><!-- Rocket has webp --><!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->
