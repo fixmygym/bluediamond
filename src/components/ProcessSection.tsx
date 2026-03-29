@@ -22,7 +22,7 @@ function ClarityCallVisual() {
   }, []);
 
   return (
-    <div className="flex flex-col gap-1.5 w-full max-w-[210px] mx-auto px-2">
+    <div className="flex flex-col gap-1.5 w-full">
       <div className="flex items-center gap-2 mb-2">
         <Calendar className="w-3.5 h-3.5 text-electric-blue" />
         <span className="text-[10px] text-slate-500 uppercase tracking-widest">
@@ -224,7 +224,7 @@ export default function ProcessSection() {
               className="glass-card flex flex-col overflow-hidden group cursor-pointer h-full"
             >
               {/* Visual area */}
-              <div className="relative flex items-center justify-center h-[220px] md:h-[280px] p-8 border-b border-white/[0.06] w-full overflow-hidden">
+              <div className="relative flex items-center justify-center h-auto min-h-[220px] md:h-[280px] p-8 border-b border-white/[0.06] w-full overflow-hidden">
                 {/* Hover glow */}
                 <div
                   className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
