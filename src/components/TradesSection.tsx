@@ -304,7 +304,7 @@ export default function TradesSection() {
 
       <div className="max-w-7xl mx-auto relative">
         {/* ── Header ── */}
-        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16">
+        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 md:gap-8 mb-10 md:mb-14 lg:mb-16">
           <div>
             <p className="text-electric-blue text-xs font-bold uppercase tracking-[0.25em] mb-5">
               Industry Expertise
@@ -323,7 +323,7 @@ export default function TradesSection() {
         </div>
 
         {/* ── Cards ── */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5 lg:gap-6">
           {trades.map((trade, i) => (
             <motion.a
               key={i}
@@ -337,7 +337,7 @@ export default function TradesSection() {
               className="bg-white shadow-sm border border-gray-100 rounded-2xl flex flex-col overflow-hidden group cursor-pointer hover:shadow-md transition-shadow"
             >
               {/* Visual area */}
-              <div className="relative flex items-center justify-center h-[220px] p-6 border-b border-gray-100 overflow-hidden">
+              <div className="relative flex items-center justify-center h-[200px] md:h-[220px] lg:h-[260px] p-6 border-b border-gray-100 overflow-hidden">
                 {/* Hover glow */}
                 <div
                   className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"

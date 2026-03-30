@@ -32,7 +32,7 @@ const BADGE_TEXT = "PRACTICAL INSIGHTS · FROM THE FIELD · ";
 
 function RotatingBadge() {
   return (
-    <div className="relative w-48 h-48">
+    <div className="relative w-36 h-36 md:w-48 md:h-48 lg:w-56 lg:h-56">
       {/* Outer spinning text ring */}
       <motion.div
         animate={{ rotate: 360 }}
@@ -77,7 +77,7 @@ export default function BlogSection() {
     <section className="py-16 md:py-28 px-6 bg-[#E8ECEF] overflow-hidden">
       <div className="max-w-7xl mx-auto">
 
-        <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-12 lg:gap-20 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-8 md:gap-12 lg:gap-16 xl:gap-20 items-start">
 
           {/* ── Left: header ── */}
           <motion.div
@@ -85,7 +85,7 @@ export default function BlogSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.7 }}
-            className="flex flex-col items-start lg:sticky lg:top-12"
+            className="flex flex-col items-start lg:sticky lg:top-12 xl:top-16"
           >
             <p className="text-electric-blue text-xs font-bold uppercase tracking-[0.25em] mb-4">
               From the Blog
@@ -121,7 +121,7 @@ export default function BlogSection() {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1, duration: 0.6 }}
                 whileHover="hover"
-                className="group relative flex items-start gap-6 py-9 border-t border-gray-300/70 last:border-b cursor-pointer"
+                className="group relative flex items-start gap-6 py-6 md:py-7 lg:py-9 border-t border-gray-300/70 last:border-b cursor-pointer"
               >
                 {/* Hover background sweep */}
                 <motion.div

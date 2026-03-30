@@ -65,10 +65,10 @@ export default function HeroSection() {
       </div>
 
       <div className="relative z-10 mx-auto max-w-[1400px] px-6 lg:px-16 pt-32 pb-24">
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-4 items-center">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-8 items-center">
 
           {/* LEFT COLUMN */}
-          <div className="lg:col-span-6 flex flex-col justify-center space-y-8 lg:-ml-28">
+          <div className="lg:col-span-6 flex flex-col justify-center space-y-8 xl:-ml-10 2xl:-ml-28">
 
             {/* Badge */}
             <motion.div
@@ -88,7 +88,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-              className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tight leading-[1.12] text-white"
+              className="text-4xl md:text-6xl lg:text-6xl 2xl:text-7xl font-black tracking-tight leading-[1.12] text-white"
             >
               <span className="italic blue-gradient-text inline-block pr-2">Radically Change</span>
               <br />
@@ -112,11 +112,11 @@ export default function HeroSection() {
               transition={{ delay: 0.8 }}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <button style={{ backgroundColor: '#00DDEE' }} className="group inline-flex items-center justify-center gap-2 px-10 py-5 rounded-full text-base font-bold uppercase tracking-widest text-black hover:scale-105 transition-transform font-button">
+              <button style={{ backgroundColor: '#00DDEE' }} className="group inline-flex items-center justify-center gap-2 px-6 py-4 lg:px-8 lg:py-4 2xl:px-10 2xl:py-5 rounded-full text-sm lg:text-sm 2xl:text-base font-bold uppercase tracking-widest text-black hover:scale-105 transition-transform font-button whitespace-nowrap">
                 Get Your Free Session
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </button>
-              <button className="group inline-flex items-center justify-center gap-2 px-8 py-5 rounded-full border border-white/10 bg-white/5 text-base font-bold uppercase tracking-widest text-white backdrop-blur-sm hover:bg-white/10 hover:border-white/20 transition-colors font-button">
+              <button className="group inline-flex items-center justify-center gap-2 px-5 py-4 lg:px-6 lg:py-4 2xl:px-8 2xl:py-5 rounded-full border border-white/10 bg-white/5 text-sm 2xl:text-base font-bold uppercase tracking-widest text-white backdrop-blur-sm hover:bg-white/10 hover:border-white/20 transition-colors font-button whitespace-nowrap">
                 <Play className="w-4 h-4 fill-current" />
                 See Results
               </button>
@@ -124,7 +124,7 @@ export default function HeroSection() {
           </div>
 
           {/* RIGHT COLUMN */}
-          <div className="lg:col-span-5 lg:col-start-8 space-y-6 lg:translate-x-8">
+          <div className="lg:col-span-5 lg:col-start-8 space-y-6 2xl:translate-x-8">
 
             {/* Stats Card */}
             <motion.div

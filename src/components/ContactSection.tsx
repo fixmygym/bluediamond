@@ -51,7 +51,7 @@ export default function ContactSection() {
       />
 
       <div className="max-w-7xl mx-auto relative">
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] gap-12 lg:gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] gap-8 md:gap-12 lg:gap-16 xl:gap-20 items-start">
 
           {/* ── Left ── */}
           <motion.div
@@ -119,7 +119,7 @@ export default function ContactSection() {
             className="relative"
           >
             <div
-              className="relative glass-card px-6 py-8 sm:px-12 sm:py-14"
+              className="relative glass-card px-6 py-8 sm:px-8 sm:py-10 md:px-10 md:py-12 lg:px-12 lg:py-14"
               style={{
                 boxShadow: "0 0 0 1px rgba(46,163,242,0.15), 0 0 50px rgba(20,90,158,0.35), 0 0 100px rgba(20,90,158,0.15)",
               }}

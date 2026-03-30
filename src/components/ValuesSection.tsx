@@ -241,16 +241,16 @@ function OperatingDashboard() {
 
       {/* 2×2 panels */}
       <div className="grid grid-cols-2">
-        <div className="h-[200px] border-b border-r border-white/[0.06]">
+        <div className="h-[160px] md:h-[200px] lg:h-[240px] border-b border-r border-white/[0.06]">
           <ClarityPanel />
         </div>
-        <div className="h-[200px] border-b border-white/[0.06]">
+        <div className="h-[160px] md:h-[200px] lg:h-[240px] border-b border-white/[0.06]">
           <IntegrityPanel />
         </div>
-        <div className="h-[200px] border-r border-white/[0.06]">
+        <div className="h-[160px] md:h-[200px] lg:h-[240px] border-r border-white/[0.06]">
           <CollaborativePanel />
         </div>
-        <div className="h-[200px]">
+        <div className="h-[160px] md:h-[200px] lg:h-[240px]">
           <SynergyPanel />
         </div>
       </div>
@@ -293,7 +293,7 @@ export default function ValuesSection() {
     >
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-10">
+        <div className="text-center mb-6 md:mb-8 lg:mb-10">
           <p className="text-electric-blue text-xs font-bold uppercase tracking-[0.2em] mb-5">
             Our Approach
           </p>
@@ -307,7 +307,7 @@ export default function ValuesSection() {
         </div>
 
         {/* 5-col split: sticky OS dashboard left + editorial list right */}
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 md:gap-12 lg:gap-16 xl:gap-20 items-start">
 
           {/* Left — dashboard (2 cols) */}
           <motion.div
@@ -321,7 +321,7 @@ export default function ValuesSection() {
           </motion.div>
 
           {/* Right — 2×2 value grid (3 cols) */}
-          <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-8">
+          <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-6 md:gap-x-8 md:gap-y-8 lg:gap-x-10 lg:gap-y-10">
             {values.map((v, i) => (
               <motion.div
                 key={i}

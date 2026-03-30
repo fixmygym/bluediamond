@@ -10,7 +10,7 @@ export default function AboutSection() {
       transition={{ duration: 0.8, ease: "easeOut" }}
       className="py-16 md:py-28 px-6 bg-[#E8ECEF] relative"
     >
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-stretch">
         {/* Text */}
         <div>
           <h2 className="text-3xl md:text-4xl font-black tracking-tight mb-6 font-display text-gray-900">
@@ -49,11 +49,11 @@ export default function AboutSection() {
           {/* Offset accent border behind the card */}
           <div className="hidden sm:block absolute inset-0 translate-x-3 translate-y-3 rounded-2xl border-2 border-electric-blue/30" />
 
-          <div className="relative h-full min-h-[400px] rounded-2xl overflow-hidden shadow-xl">
+          <div className="relative h-full min-h-[300px] md:min-h-[400px] lg:min-h-[500px] rounded-2xl overflow-hidden shadow-xl">
             <img
               src="/about-bg.webp"
               alt="Blue Diamond coaching session"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-[65%_center]"
             />
 
             {/* Vignette — dark edges fade to transparent center */}

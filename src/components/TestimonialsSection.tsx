@@ -36,7 +36,7 @@ function TestimonialCard({ card, index }: { card: typeof cards[0]; index: number
       transition={{ delay: index * 0.12, duration: 0.6 }}
       whileHover={{ y: -4 }}
       whileTap={{ scale: 0.98 }}
-      className="bg-white rounded-2xl p-8 flex flex-col gap-6 relative overflow-hidden cursor-default group"
+      className="bg-white rounded-2xl p-5 md:p-6 lg:p-8 flex flex-col gap-6 relative overflow-hidden cursor-default group"
       style={{
         boxShadow: "0 2px 12px rgba(0,0,0,0.06), 0 0 0 1px rgba(20,90,158,0.08), 0 0 32px rgba(20,90,158,0.08)",
         transition: "box-shadow 0.3s ease",
@@ -116,7 +116,7 @@ export default function TestimonialsSection() {
       <div className="max-w-7xl mx-auto relative">
 
         {/* ── Top row: quote left, video right ── */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 xl:gap-20 items-center mb-16">
 
           {/* Left — Title + featured quote */}
           <motion.div
@@ -171,7 +171,7 @@ export default function TestimonialsSection() {
         <div className="h-px bg-gray-300/60 mb-16" />
 
         {/* ── Bottom row: 3 testimonial cards ── */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5 lg:gap-6">
           {cards.map((card, i) => (
             <TestimonialCard key={card.name} card={card} index={i} />
           ))}

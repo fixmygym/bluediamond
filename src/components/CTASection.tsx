@@ -33,7 +33,7 @@ export default function CTASection() {
       />
 
       <div className="max-w-7xl mx-auto relative">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 lg:gap-20 xl:gap-24 items-center">
 
           {/* ── Left: Content ── */}
           <motion.div
@@ -135,7 +135,7 @@ export default function CTASection() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.4 + i * 0.15, duration: 0.6 }}
-                  className={`${positions[i]} hidden xl:flex flex-col items-center justify-center w-24 h-24 rounded-2xl border border-white/[0.10] text-center`}
+                  className={`${positions[i]} hidden lg:flex flex-col items-center justify-center w-20 h-20 lg:w-24 lg:h-24 rounded-2xl border border-white/[0.10] text-center`}
                   style={{
                     background: "rgba(9,18,32,0.90)",
                     backdropFilter: "blur(12px)",

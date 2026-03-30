@@ -198,7 +198,7 @@ export default function ProcessSection() {
     >
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-8 md:mb-12 lg:mb-16">
           <p className="text-electric-blue text-xs font-bold uppercase tracking-[0.2em] mb-5">
             How It Works
           </p>
@@ -224,7 +224,7 @@ export default function ProcessSection() {
               className="glass-card flex flex-col overflow-hidden group cursor-pointer h-full"
             >
               {/* Visual area */}
-              <div className="relative flex items-center justify-center h-auto min-h-[220px] md:h-[280px] p-8 border-b border-white/[0.06] w-full overflow-hidden">
+              <div className="relative flex items-center justify-center h-auto min-h-[220px] md:h-[260px] lg:h-[280px] xl:h-[300px] p-8 border-b border-white/[0.06] w-full overflow-hidden">
                 {/* Hover glow */}
                 <div
                   className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
@@ -243,7 +243,7 @@ export default function ProcessSection() {
               </div>
 
               {/* Text area */}
-              <div className="p-7 mt-auto">
+              <div className="p-5 md:p-6 lg:p-7 mt-auto">
                 <div className="flex items-center gap-2.5 mb-3">
                   <div className="w-6 h-6 rounded-full blue-gradient-bg flex items-center justify-center text-white text-xs font-black shrink-0">
                     {i + 1}

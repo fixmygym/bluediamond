@@ -53,7 +53,7 @@ export default function App() {
           </motion.div>
 
           {/* Centered Menu */}
-          <div className="hidden lg:flex flex-1 items-center justify-center gap-10 text-[13px] font-bold uppercase tracking-[0.2em] text-slate-200">
+          <div className="hidden lg:flex flex-1 items-center justify-end xl:justify-center gap-5 xl:gap-10 text-[11px] xl:text-[13px] font-bold uppercase tracking-[0.1em] xl:tracking-[0.2em] text-slate-200 whitespace-nowrap pr-4 xl:pr-0">
             {["About Blue Diamond", "Our Coaching", "Who We Serve", "Events", "Contact"].map((item, i) => (
               <motion.a
                 key={item}
@@ -72,9 +72,9 @@ export default function App() {
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="hidden lg:block"
+            className="hidden lg:block shrink-0 pl-4"
           >
-            <button className="px-10 py-4 border-2 border-[#00DDEE] text-[#00DDEE] text-[13px] font-bold uppercase tracking-[0.15em] hover:bg-[#00DDEE] hover:text-black transition-all rounded-full font-button">
+            <button className="px-4 xl:px-10 py-2 xl:py-4 border-2 border-[#00DDEE] text-[#00DDEE] text-[10px] xl:text-[13px] font-bold uppercase tracking-[0.08em] xl:tracking-[0.15em] hover:bg-[#00DDEE] hover:text-black transition-all rounded-full font-button whitespace-nowrap">
               Get Your Free Session
             </button>
           </motion.div>
